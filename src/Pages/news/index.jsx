@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import noimage from '../../assets/notimage.jpg'
 import CardLoader from '../../Components/cardLoader';
-import { time } from '../../Constants/functions';
 const News = () => {
   const url = 'https://newsapi.org/v2/top-headlines?country=us&category=general&apiKey=b75a83e043324a5499d4f73e48a02b4e';
 
@@ -26,7 +25,7 @@ const News = () => {
     };
 
     fetchNews();
-  }, [url]);
+  }, []);
   console.log(articles);
   return (
     <div className='mt-20'>
@@ -39,7 +38,7 @@ const News = () => {
               articles.map((item, index) => (
                 <div key={index} className='p-4 shadow rounded relative pb-16'>
                  <div className='w-full relative'>
-                   <div class="w-full relative mx-auto  overflow-hidden rounded-lg">
+                   <div className="w-full relative mx-auto  overflow-hidden rounded-lg">
                     <img src={item.urlToImage ? item.urlToImage : noimage} alt="" className="w-full h-60 max-lg:h-44   relative z-0 rounded-lg transition-all duration-300 hover:scale-110"/>
                   </div>
                  </div>
