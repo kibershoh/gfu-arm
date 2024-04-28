@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import noimage from '../../assets/notimage.jpg'
 import CardLoader from '../../Components/cardLoader';
 const News = () => {
-  const url = 'https://newsapi.org/v2/top-headlines?country=us&category=general&apiKey=b75a83e043324a5499d4f73e48a02b4e';
+  const url ='https://gnews.io/api/v4/top-headlines?category=general&lang=en&country=us&max=10&apikey=4f0f7f1a3a0caff854f130bb42d8c74a' 
 
 
   const [articles, setArticles] = useState([]);
@@ -38,8 +38,8 @@ const News = () => {
               articles.map((item, index) => (
                 <div key={index} className='p-4 shadow rounded relative pb-16'>
                  <div className='w-full relative'>
-                   <div className="w-full relative mx-auto  overflow-hidden rounded-lg">
-                    <img src={item.urlToImage ? item.urlToImage : noimage} alt="" className="w-full h-60 max-lg:h-44   relative z-0 rounded-lg transition-all duration-300 hover:scale-110"/>
+                   <div class="w-full relative mx-auto  overflow-hidden rounded-lg">
+                    <img src={item.image ? item.image : noimage} alt="" className="w-full h-60 max-lg:h-44   relative z-0 rounded-lg transition-all duration-300 hover:scale-110"/>
                   </div>
                  </div>
                   <span className='text-slate-500'>{item.source.name}</span>
