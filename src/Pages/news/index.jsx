@@ -46,8 +46,7 @@ const News = () => {
                   <p className='pt-3'>{item.title}
 
                   </p>
-                  <div className='text-right 
-                  absolute bottom-4 right-4
+                  <div className='text-right  absolute bottom-4 right-4
                   '>
                     <Link target='_blank' to={item.url} className='bg-blue-600 text-white rounded p-2 hover:bg-blue-800'>Read More</Link>
                   </div>

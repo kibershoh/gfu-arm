@@ -95,16 +95,16 @@ const Navbar = () => {
             <HiMenuAlt1 className="HiMenuAlt1" size={22} />
           </button>
         </Link>
-        <div className="hidden lg:block flex items-center">
+        <div className="hidden lg:block  items-center">
           <ul className="flex">
             {navLinks2.map((nav) => (
-              <li key={nav.id} className="text-dark mx-5 links">
+              <li key={nav.id} className="text-dark w-auto">
                 <NavLink
                   to={nav.path}
                   className={
                     active === nav.title
-                      ? "flex text-blue-800 text-lg font-semibold border-b-2 border-blue-800"
-                      : "flex items-center text-lg font-semibold"
+                      ? "flex mx-4 text-blue-800 text-lg font-semibold border-b-2 border-blue-800"
+                      : "flex mx-4 items-center text-lg font-semibold"
                   }
                   onClick={() => {
                     setToggle(!toggle);
