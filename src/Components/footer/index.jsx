@@ -61,19 +61,19 @@ const Footer = () => {
             <div className=''>
                 <h1 className='text-2xl font-semibold mb-2 from-neutral-700 max-lg:text-xl max-md:text-lg'>Find us in social medias</h1>
                 <div className="flex items-center max-md:justify-around mt-20">
-                    <Link to="/" className="bg-blue-900 hover:bg-blue-600 mr-8   rounded-full p-2 text-white">
+                    <Link to="/" className="bg-blue-900 hover:bg-blue-600 mr-4   rounded-full p-2 text-white">
                         <BsLinkedin size={20} />
                     </Link>
-                    <Link to="/" className="bg-blue-900 hover:bg-blue-600 mr-8   rounded-full p-2 text-white">
+                    <Link to="/" className="bg-blue-900 hover:bg-blue-600 mr-4   rounded-full p-2 text-white">
                         <BsGithub size={20} />
                     </Link>
-                    <Link to="/" className="bg-blue-900 hover:bg-blue-600 mr-8  rounded-full  p-2 text-white">
+                    <Link to="/" className="bg-blue-900 hover:bg-blue-600 mr-4  rounded-full  p-2 text-white">
                         <BsInstagram size={20} />
                     </Link>
-                    <Link to="/" className="bg-blue-900 hover:bg-blue-600 mr-8 rounded-full  p-2 text-white">
+                    <Link to="/" className="bg-blue-900 hover:bg-blue-600 mr-4 rounded-full  p-2 text-white">
                         <BsTelegram size={20} />
                     </Link>
-                    <Link to="/" className="bg-blue-900 hover:bg-blue-600 mr-8  rounded-full p-2 text-white">
+                    <Link to="/" className="bg-blue-900 hover:bg-blue-600 mr-4  rounded-full p-2 text-white">
                         <BsTwitter size={20} />
                     </Link>
                 </div>

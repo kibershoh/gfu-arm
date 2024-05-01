@@ -5,9 +5,9 @@ const Books = () => {
  
   return (
     <div>
-      <div className='books mt-16'>
+      <div className='books mt-16 max-lg:mt-10'>
        
-<form className='w-1/2'>
+<form className='w-1/2 max-md:w-11/12'>
 
    <label for="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
     <div className="relative">
@@ -23,9 +23,9 @@ const Books = () => {
       </div>
      <div classname="w-full my-10">
  
-<div className="my-10 flex justify-between gap-10 mx-20">   
-     <h1 className='text-3xl font-semibold'>All Books</h1>
-     <select id="large" className="block  px-4 outline-none py-3 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 ">
+<div className="my-10 flex justify-between gap-10 max-md:gap-2 mx-20 max-lg:mx-5 max-lg:my-4">   
+     <h1 className='text-3xl font-semibold max-lg:text-2xl max-md:text-xl '>All Books</h1>
+     <select id="large" className="block px-4 outline-none py-3 max-md:py-1 max-md:px-2 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 ">
     <option selected>Choose a category</option>
     <option value="US">Fantasy</option>
     <option value="CA">Literature</option>
