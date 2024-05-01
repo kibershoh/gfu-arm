@@ -102,7 +102,7 @@ const Navbar = () => {
                 <NavLink
                   to={nav.path}
                   className={
-                    active === nav.title
+                   active === nav.title
                       ? "flex mx-4 text-blue-800 text-lg font-semibold border-b-2 border-blue-800"
                       : "flex mx-4 items-center text-lg font-semibold"
                   }

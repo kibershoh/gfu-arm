@@ -23,3 +23,28 @@ export const navLinks2 = [
   
 
 ];
+export const categories = [
+  {
+    id: 'fantasy',  
+    title: "Fanatasy",
+    path: '/',
+  },
+  {
+    id: 'literature',
+    title: "Literature",
+    path: '/',
+  },
+  {
+    id: 'psychology',
+    title: "Psychology",
+    path: '/',
+  },
+  {
+    id: 'thriller',
+    title: "Thriller",
+    path: '/',
+  },
+  
+  
+
+];
