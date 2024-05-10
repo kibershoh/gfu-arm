@@ -5,7 +5,7 @@ const Books = () => {
  
   return (
     <div>
-      <div className='books mt-16 max-lg:mt-10'>
+      <div className='books mt-20 rounded-md max-lg:mt-10 px-10'>
        
 <form className='w-1/2 max-md:w-11/12'>
 

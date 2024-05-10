@@ -22,80 +22,83 @@ const SwiperSlider = () => {
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
   return (
-   <>
+   <div className='max-md:mt-20'>
     <Swiper
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 5000,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         pagination={{
           clickable: true,
         }}
-        navigation={true}
+        // navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         onAutoplayTimeLeft={onAutoplayTimeLeft}
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className='w-full grid grid-cols-2 gap-10 mx-20 items-center'>
-           <div className='h-1/2'>
-
-             <img src={book1}  className='w-80' alt="" />
-           </div>
+          <div className='w-full  flex justify-between max-lg:flex-col max-md:justify-center items-center  gap-20 mx-20 max-lg:mx-2 max-md:gap-8 '>
+           
             <div className='flex flex-col items-start'>
-              <h1>Lorem ipsum dolor sit.</h1>
-              <h1>Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aut vitae repellendus mollitia fugit possimus modi adipisci minima excepturi repellat.</h1>
-              <button  className='bg-blue-600 p-2 rounded text-white'>Read More</button>
+          <h1 className='text-3xl font-semibold mb-10'>Lorem ipsum dolor sit amet.</h1>
+              <p className='mb-3 text-xl'> fnfedk Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aut vitae repellendus mollitia fugit possimus modi adipisci minima excepturi repellat.</p>
+              <button  className='bg-blue-600 p-2 mt-20 rounded text-white max-md:mt-4 hover:bg-blue-700  hover:bg-blue-700'>Read More</button>
             </div>
+            <div className='w-full '>
+
+             <img src={book1}  className='w-80 h-80 mx-auto max-md:w-40 max-md:h-40' alt="" />
+           </div>
           </div>
           
         </SwiperSlide>
         <SwiperSlide>
-          <div className='w-full grid grid-cols-2 gap-10 mx-20 items-center'>
-           <div className='h-1/2'>
-
-             <img src={book2}  className='w-80' alt="" />
-           </div>
-            <div className='flex flex-col place-items-start'>
-              <h1>Lorem ipsum dolor sit.</h1>
-              <p>Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing Debitis aut vitae repellendus mollitia fugit possimus modi adipisci minima excepturi repellat.</p>
-              <button className='bg-blue-600 p-2 rounded text-white'>Read More</button>
+          <div className='w-full  flex justify-between max-lg:flex-col max-md:justify-center items-center  gap-20 mx-20 max-lg:mx-2 max-md:gap-8 '>
+           
+            <div className='flex flex-col items-start'>
+          <h1 className='text-3xl font-semibold mb-10'>Lorem ipsum dolor sit amet.</h1>
+              <p className='mb-3 text-xl'> fnfedk Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aut vitae repellendus mollitia fugit possimus modi adipisci minima excepturi repellat.</p>
+              <button  className='bg-blue-600 p-2 mt-20 rounded text-white max-md:mt-4 hover:bg-blue-700 '>Read More</button>
             </div>
+            <div className='w-full'>
+
+             <img src={book1}  className='w-80 h-80 mx-center max-md:w-40 max-md:h-40' alt="" />
+           </div>
           </div>
           
         </SwiperSlide>
         <SwiperSlide>
-          <div className='w-full grid grid-cols-2 gap-10 mx-20 items-center'>
-           <div className='h-1/2'>
-
-             <img src={book3}  className='w-80' alt="" />
-           </div>
-            <div className='flex flex-col place-items-start'>
-              <h1>Lorem ipsum dolor sit.</h1>
-              <p>Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing Debitis aut vitae repellendus mollitia fugit possimus modi adipisci minima excepturi repellat.</p>
-              <button className='bg-blue-600 p-2 rounded text-white'>Read More</button>
+          <div className='w-full  flex justify-between max-lg:flex-col max-md:justify-center items-center  gap-20 mx-20 max-lg:mx-2 max-md:gap-8 '>
+           
+            <div className='flex flex-col items-start'>
+          <h1 className='text-3xl font-semibold mb-10'>Lorem ipsum dolor sit amet.</h1>
+              <p className='mb-3 text-xl'> fnfedk Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aut vitae repellendus mollitia fugit possimus modi adipisci minima excepturi repellat.</p>
+              <button  className='bg-blue-600 p-2 mt-20 rounded text-white max-md:mt-4 hover:bg-blue-700 '>Read More</button>
             </div>
+            <div className='w-full'>
+
+             <img src={book1}  className='w-80 h-80 mx-center max-md:w-40 max-md:h-40' alt="" />
+           </div>
           </div>
           
         </SwiperSlide>
         <SwiperSlide>
-          <div className='w-full grid grid-cols-2 gap-10 mx-20 items-center'>
-           <div className='h-1/2'>
-
-             <img src={book4}  className='w-80' alt="" />
-           </div>
-            <div className='flex flex-col place-items-start'>
-              <h1>Lorem ipsum dolor sit.</h1>
-              <p>Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing Debitis aut vitae repellendus mollitia fugit possimus modi adipisci minima excepturi repellat.</p>
-              <button className='bg-blue-600 p-2 rounded text-white'>Read More</button>
+          <div className='w-full  flex justify-between max-lg:flex-col max-md:justify-center items-center  gap-20 mx-20 max-lg:mx-2 max-md:gap-8 '>
+           
+            <div className='flex flex-col items-start'>
+          <h1 className='text-3xl font-semibold mb-10'>Lorem ipsum dolor sit amet.</h1>
+              <p className='mb-3 text-xl'> fnfedk Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aut vitae repellendus mollitia fugit possimus modi adipisci minima excepturi repellat.</p>
+              <button  className='bg-blue-600 p-2 mt-20 rounded text-white max-md:mt-4 hover:bg-blue-700 '>Read More</button>
             </div>
+            <div className='w-full'>
+
+             <img src={book1}  className='w-80 h-80 mx-center max-md:w-40 max-md:h-40' alt="" />
+           </div>
           </div>
           
         </SwiperSlide>
        
-        
         
         
         <div className="autoplay-progress" slot="container-end">
@@ -106,7 +109,7 @@ const SwiperSlider = () => {
         </div>
       </Swiper>
 
-   </>
+   </div>
   )
 }
 
