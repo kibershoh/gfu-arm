@@ -15,6 +15,11 @@ export const navLinks2 = [
     path: '/news',
   },
   {
+    id: 'about',
+    title: "About Us",
+    path: '/about',
+  },
+  {
     id: 'contact',
     title: "Contact",
     path: '/contact',
