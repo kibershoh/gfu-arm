@@ -1,0 +1,18 @@
+.navbar{
+    transition: all .5s;
+    visibility: visible;
+    transform: translateY(0);
+}
+  .showNav {
+      visibility: visible;
+      transition: all 1s;
+      transform: translateY(0);
+
+  }
+
+  .hideNav {
+      visibility: hidden;
+      transition: all 0.2s;
+      transform: translateY(-100%);
+
+  }

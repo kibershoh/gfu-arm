@@ -43,7 +43,7 @@ const SwiperSlider = () => {
            
             <div className='flex flex-col items-start'>
           <h1 className='text-3xl font-semibold mb-10'>Lorem ipsum dolor sit amet.</h1>
-              <p className='mb-3 text-xl'> fnfedk Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aut vitae repellendus mollitia fugit possimus modi adipisci minima excepturi repellat.</p>
+              <p className='mb-3 text-xl'> Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aut vitae repellendus mollitia fugit possimus modi adipisci minima excepturi repellat.</p>
               <button  className='bg-blue-600 p-2 mt-20 rounded text-white max-md:mt-4 hover:bg-blue-700  hover:bg-blue-700'>Read More</button>
             </div>
             <div className='w-full '>
@@ -58,12 +58,12 @@ const SwiperSlider = () => {
            
             <div className='flex flex-col items-start'>
           <h1 className='text-3xl font-semibold mb-10'>Lorem ipsum dolor sit amet.</h1>
-              <p className='mb-3 text-xl'> fnfedk Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aut vitae repellendus mollitia fugit possimus modi adipisci minima excepturi repellat.</p>
+              <p className='mb-3 text-xl'>   Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aut vitae repellendus mollitia fugit possimus modi adipisci minima excepturi repellat.</p>
               <button  className='bg-blue-600 p-2 mt-20 rounded text-white max-md:mt-4 hover:bg-blue-700 '>Read More</button>
             </div>
             <div className='w-full'>
 
-             <img src={book1}  className='w-80 h-80 mx-center max-md:w-40 max-md:h-40' alt="" />
+             <img src={book2}  className='w-80 h-80 mx-auto max-md:w-40 max-md:h-40' alt="" />
            </div>
           </div>
           
@@ -73,12 +73,12 @@ const SwiperSlider = () => {
            
             <div className='flex flex-col items-start'>
           <h1 className='text-3xl font-semibold mb-10'>Lorem ipsum dolor sit amet.</h1>
-              <p className='mb-3 text-xl'> fnfedk Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aut vitae repellendus mollitia fugit possimus modi adipisci minima excepturi repellat.</p>
+              <p className='mb-3 text-xl'>   Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aut vitae repellendus mollitia fugit possimus modi adipisci minima excepturi repellat.</p>
               <button  className='bg-blue-600 p-2 mt-20 rounded text-white max-md:mt-4 hover:bg-blue-700 '>Read More</button>
             </div>
             <div className='w-full'>
 
-             <img src={book1}  className='w-80 h-80 mx-center max-md:w-40 max-md:h-40' alt="" />
+             <img src={book3}  className='w-80 h-80 mx-center max-md:w-40 max-md:h-40' alt="" />
            </div>
           </div>
           
@@ -88,12 +88,12 @@ const SwiperSlider = () => {
            
             <div className='flex flex-col items-start'>
           <h1 className='text-3xl font-semibold mb-10'>Lorem ipsum dolor sit amet.</h1>
-              <p className='mb-3 text-xl'> fnfedk Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aut vitae repellendus mollitia fugit possimus modi adipisci minima excepturi repellat.</p>
+              <p className='mb-3 text-xl'>   Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aut vitae repellendus mollitia fugit possimus modi adipisci minima excepturi repellat.</p>
               <button  className='bg-blue-600 p-2 mt-20 rounded text-white max-md:mt-4 hover:bg-blue-700 '>Read More</button>
             </div>
             <div className='w-full'>
 
-             <img src={book1}  className='w-80 h-80 mx-center max-md:w-40 max-md:h-40' alt="" />
+             <img src={book4}  className='w-80 h-80 mx-auto max-md:w-40 max-md:h-40' alt="" />
            </div>
           </div>
           

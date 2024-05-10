@@ -9,6 +9,8 @@ import {
 import clsx from "clsx";
 import logotip from '../../assets/logotip.png'
 import { navLinks2 } from "../../Constants/navbar_items";
+import { useScroll } from "../../Constants/useScroll";
+import './styles.scss'
 const Navbar = () => {
 
 
@@ -20,9 +22,7 @@ const Navbar = () => {
   };
 
 
-  const activeInput = () => {
-    setInput(!input);
-  };
+   
 
 
   const Profile = () => {
@@ -50,6 +50,8 @@ const Navbar = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   });
+  const { scrollX, scrollY, scrollDirection } = useScroll();
+
 
   // Navbar scrool height
   const [scrolled, setScrolled] = useState(false);
@@ -75,11 +77,15 @@ const Navbar = () => {
     setLanguage(e.target.value);
   };
   return (
-    <div className="w-full fixed z-30 " ref={sidebarRef}>
+    <div className={clsx(
+      scrollDirection !== "up" || scrollDirection === undefined || scrollY === undefined ? "  transform translate-y-0 visible  transition duration-1000" : ( "transform translate-y-full invisible transition duration-200"),
+      "w-full fixed z-30 top-0 left-0",
+                     
+    )} ref={sidebarRef}>
       {/* Desktop */}
       <div
         className={clsx(
-          "flex justify-between items-center backdrop-blur-lg border-b p-1 max-w-full w-full fixed top-0 left-0",
+          "flex justify-between items-center bg-white border-b p-1 max-w-full w-full fixed top-0 left-0",
           scrolled ? "shadow-md" : " "
         )}
       >
@@ -118,14 +124,20 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
+           
 
         <div className="flex items-center">
+          <div className="mr-3 max-md:hidden">
+            <Link to={'/login'} className="text-xl  bg-blue-600 hover:bg-blue-700 p-1 px-2 rounded text-white">Login</Link>
+          </div>
           <div>
             <select className="outline-none p-1 text-dark font-semibold text-lg border-2 border-blue-600  rounded-lg  bg-transparent	" >
-              <option value="en" className="text-md text-black  bg-transparent  font-semibold mb-10 outline-none" style={{ height: '30px' }}>English</option>
-              <option value="uz" className="text-md text-black  bg-transparent  font-semibold mb-10 outline-none">Uzbek</option>
+              <option value="en" className="text-md text-black  bg-transparent  font-semibold mb-10 outline-none" style={{ height: '30px' }}>ENG</option>
+              <option value="uz" className="text-md text-black  bg-transparent  font-semibold mb-10 outline-none">UZB</option>
             </select>
           </div>
+
+         
 
           <div
             className={
@@ -150,12 +162,8 @@ const Navbar = () => {
           !sidebar ? "-left-full" : " "
         )}
       >
-        <div className="flex justify-between items-center pr-4 pl-2">
-          <Link to="/">
-            <span>
-              {/* <img src={logotip} width={50} className="rounded-full" alt="" /> */}
-            </span>
-          </Link>
+        <div className="flex justify-between items-center pr-4 pl-2 pt-5">
+          
           <CgClose
             size={23}
             className="ml-auto hidden max-lg:block"
@@ -190,22 +198,10 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <div className="px-3 pt-56">
-          <div className="flex justify-between relative my-4 items-center">
-            <h1 className="mr-3 ml-1">
-              | Hello, <span className="font-semibold">John</span>
-            </h1>
-            <button className="flex items-center" onClick={Profile}>
-              {/* <img
-                src={logotip}
-                alt="person"
-                className="w-10 h-10 rounded-full bg-white border-2"
-              /> */}
-            </button>
+        <div className="px-3 pt-80">
+          <div className="ml-3">
+            <Link className="text-xl  bg-blue-600 hover:bg-blue-700 p-1 px-2 rounded text-white">Login</Link>
           </div>
-          <h3 className="text-sm">Restourant Admin Dashboard</h3>
-          <p className="text-xs">@2023 All Rights Reserved</p>
-          <p className="pt-3 text-xs">Made wuth by Peterdraw</p>
         </div>
       </nav>
     </div>
