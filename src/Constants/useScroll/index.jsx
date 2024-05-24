@@ -22,7 +22,6 @@ import { useState, useEffect } from "react";
        window.removeEventListener("scroll", listener);
      };
    },[bodyOffset]);
-   console.log(scrollDirection);
    return {
      scrollY,
      scrollX,

@@ -24,6 +24,11 @@ export const navLinks2 = [
     title: "Contact",
     path: '/contact',
   },
+  {
+    id: 'create',
+    title: "Create",
+    path: '/create',
+  },
   
   
 

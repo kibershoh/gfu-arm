@@ -3,6 +3,18 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import noimage from '../../assets/notimage.jpg'
 import CardLoader from '../../Components/cardLoader';
+
+
+const API_URL = 'https://librarygfu.pythonanywhere.com/en-us/books/book/';
+
+export const getBooks = async () => {
+    try {
+        const response =await axios.get(API_URL);
+        return response.data;
+    } catch (error) {
+        console.log('Error fetching books:', error);
+    }
+};
 const News = () => {
   const url ='https://gnews.io/api/v4/top-headlines?category=general&lang=en&country=us&max=10&apikey=4f0f7f1a3a0caff854f130bb42d8c74a' 
 
@@ -26,7 +38,6 @@ const News = () => {
 
     fetchNews();
   }, []);
-  console.log(articles);
   return (
     <div className='mt-20'>
       {
