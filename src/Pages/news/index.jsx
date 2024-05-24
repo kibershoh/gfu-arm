@@ -1,8 +1,10 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
-import noimage from '../../assets/notimage.jpg'
 import CardLoader from '../../Components/cardLoader';
+import SliderImages from './sliderImages';
+import ImageSlider from './sliderImages';
+import Modal from './Modal';
 
 
 const API_URL = 'https://librarygfu.pythonanywhere.com/en-us/books/book/';
@@ -38,6 +40,33 @@ const News = () => {
 
     fetchNews();
   }, []);
+
+
+
+  // ===========
+  // const [error, setError] = useState(null);
+  const [news, setNews] = useState([]);
+
+  useEffect(() => {
+    const requestOptions = {
+      method: "GET",
+      redirect: "follow"
+    };
+
+    const fetchBooks = async () => {
+      try {
+        const response = await fetch("https://librarygfu.pythonanywhere.com/en-us/news/news", requestOptions);
+        const textResult = await response.json();
+        setNews(textResult);
+        console.log("News:", textResult);
+      } catch (err) {
+        // setError(err);
+        console.error(err);
+      }
+    };
+
+    fetchBooks();
+  }, []);
   return (
     <div className='mt-20'>
       {
@@ -46,21 +75,17 @@ const News = () => {
           <div className='grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 w-full gap-3'>
             {
 
-              articles.map((item, index) => (
+              news?.map((item, index) => (
                 <div key={index} className='p-4 shadow rounded relative pb-16'>
-                 <div className='w-full relative'>
-                   <div class="w-full relative mx-auto  overflow-hidden rounded-lg">
-                    <img src={item.image ? item.image : noimage} alt="" className="w-full h-60 max-lg:h-44   relative z-0 rounded-lg transition-all duration-300 hover:scale-110"/>
+                   <div className="">
+                    <ImageSlider fotos={item.fotos}/>
                   </div>
-                 </div>
-                  <span className='text-slate-500'>{item.source.name}</span>
-                  <p className='pt-3'>{item.title}
+                  <p className='text-slate-500 mt-3'>{item.title}</p>
+                  {/* <p className='pt-3'>{item.info}
 
-                  </p>
-                  <div className='text-right  absolute bottom-4 right-4
-                  '>
-                    <Link target='_blank' to={item.url} className='bg-blue-600 text-white rounded p-2 hover:bg-blue-800'>Read More</Link>
-                  </div>
+                  </p> */}
+                  
+                  <Modal info={item.info}/>
                 </div>
               ))
 
@@ -69,6 +94,8 @@ const News = () => {
 
           </div>
       }
+                          {/* <ImageSlider/> */}
+
     </div>
   )
 }

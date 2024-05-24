@@ -8,11 +8,11 @@ import axios from 'axios'
 const App = () => {
 
   const [data, setData] = useState(null);
-  const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(true);
-
-   const [result, setResult] = useState('');
+  
+  const [result, setResult] = useState('');
   const [error, setError] = useState(null);
+  const [books, setBooks] = useState([]);
 
   useEffect(() => {
     const requestOptions = {
@@ -22,10 +22,10 @@ const App = () => {
 
     const fetchBooks = async () => {
       try {
-        const response = await fetch("https://librarygfu.pythonanywhere.com/en-us/books/book/", requestOptions);
+        const response = await fetch("https://librarygfu.pythonanywhere.com/en-us/news/news/", requestOptions);
         const textResult = await response.json();
-        setResult(textResult);
-        console.log(textResult.results);
+        setBooks(textResult);
+        console.log(books);
       } catch (err) {
         setError(err);
         console.error(err);

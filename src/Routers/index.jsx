@@ -4,6 +4,7 @@ import { Books, Contact, Home, News } from '../Pages'
 import Login from '../Pages/login'
 import AboutUs from '../Pages/aboutUs'
 import CreateBook from '../Pages/CreateBook'
+import CreateNews from '../Pages/CreateNews'
 
 const AllRouters = () => {
   return (
@@ -16,6 +17,7 @@ const AllRouters = () => {
         <Route path={'/contact'} element={<Contact />} />
         <Route path={'/about'} element={<AboutUs />} />
         <Route path={'/create'} element={<CreateBook />} />
+        <Route path={'/create-news'} element={<CreateNews />} />
         <Route path={'/login'} element={<Login />} />
       </Routes>
     </>
