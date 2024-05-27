@@ -67,10 +67,7 @@ const News = () => {
 
     fetchBooks();
   }, []);
-   const time = (date) => {
-    const day = `${formatDate(date.toDate().getDate())}.${formatDate(date.toDate().getMonth() + 1)}.${formatDate(date.toDate().getFullYear())}, ${formatDate(date.toDate().getHours())} : ${formatDate(date.toDate().getMinutes())}`
-    return day
-}
+   
   return (
     <div className='mt-20'>
       {
@@ -88,7 +85,7 @@ const News = () => {
                   {/* <p className='pt-3'>{item.info}
 
                   </p> */}
-                  <span>{time(item.created)}</span>
+                  {/* <span></span> */}
                   <Modal info={item.info}/>
                 </div>
               ))
