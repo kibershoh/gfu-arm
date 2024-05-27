@@ -28,7 +28,7 @@ const BookList = () => {
     fetchBooks();
   });
   return (
-    <div className='grid grid-cols-3 max-xl:grid-cols-2 max-md:grid-cols-1  gap-6 px-16'>
+    <div className='grid grid-cols-3 max-xl:grid-cols-2 max-md:grid-cols-1  gap-6 px-16 max-md:px-1'>
     {
         data.map((book)=>(
             <BookCard book = {book}/>

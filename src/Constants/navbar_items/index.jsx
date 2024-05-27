@@ -19,22 +19,7 @@ export const navLinks2 = [
     title: "About Us",
     path: '/about',
   },
-  {
-    id: 'contact',
-    title: "Contact",
-    path: '/contact',
-  },
-  {
-    id: 'create',
-    title: "Create",
-    path: '/create',
-  },
-  {
-    id: 'createNews',
-    title: "Create News",
-    path: '/create-news',
-  },
-  
+   
   
 
 ];

@@ -33,10 +33,12 @@ const BookCard = ({ book }) => {
                 {book.caption}
               </p>
              <div className='w-full text-right px-2 pt-8 absolute right-0 -bottom-8'>
+              <Link to={book.file} download target='_blank'>
                <button className=" inline-flex gap-5 items-center px-3 py-2 max-md:py-1 text-md max-md:text-sm font-medium text-center text-gray-800 border border-blue-600 rounded-md hover:bg-[#CAF4FF] focus:ring-4 focus:outline-none focus:ring-blue-300">
                 Download <FaDownload />
 
               </button>
+              </Link>
              </div>
             </div>
                 {/* <button className="hover:scale-115 mt-3 absolute right-0" onClick={Likes}>

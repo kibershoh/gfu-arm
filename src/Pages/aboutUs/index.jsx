@@ -1,32 +1,71 @@
-import React from 'react'
-import aboutus from '../../assets/aboutus.jpg'
+import React, { useState } from 'react';
+import aboutus from '../../assets/aboutus.jpg';
+import one from '../../assets/education/1.jpg';
+import two from '../../assets/education/2.jpg';
+import three from '../../assets/education/4.jpg';
+import dildora from '../../assets/person/dildora.png';
+import feruza from '../../assets/person/feruza.png';
+import shahzoda from '../../assets/person/shahzoda.png';
+import shoxsanam from '../../assets/person/shoxsanam.png';
+import zebiniso from '../../assets/person/zebiniso.png';
+import clsx from 'clsx';
+
 const AboutUs = () => {
+    const [value, setValue] = useState(0);
+
+    const handleChange = (event, newValue) => {
+        setValue(newValue);
+    };
+    const [tab, setTab] = useState('education')
+
     return (
         <>
-            <div className='grid grid-cols-2  gap-10 px-10 items-center'>
-                <div>
-                    <h1 className='text-4xl font-bold'>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
-                    <p className='mt-10'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem esse dolores rerum placeat voluptatibus? Numquam deleniti
-                        sint ex, impedit vitae ea necessitatibus sunt alias non illo eaque. Odit, debitis qui?</p>
+            <div className='mt-24'>
+                <div className='my-20'>
+                    <div className=' mx-auto w-full flex justify-around'>
+                        <button onClick={() => setTab('education')} className={clsx(
+                            tab === 'education' ? 'border bg-blue-600 text-white p-2 rounded-lg border-blue-600 shadow-sm ' : '',
+
+                            'text-2xl max-md:text-sm max-md:p-1 rounded-lg hover:bg-blue-600 hover:text-white'
+                        )}>O'quv zallari </button>
+
+                        <button onClick={() => setTab('library')} className={clsx(
+                            tab === 'library'  ? "border bg-blue-600 text-white p-2 rounded-lg border-blue-600 shadow-sm " : '',
+                            'text-2xl max-md:text-sm max-md:p-1 rounded-lg hover:bg-blue-600 hover:text-white p-2'
+                        )}>Kutubxona haqida</button>
+                        <button onClick={() => setTab('team')} className={clsx(tab === 'team' ? "border bg-blue-600 text-white p-2 rounded-lg border-blue-600 shadow-sm" : '',
+                            'text-2xl max-md:text-sm max-md:p-1 rounded-lg hover:bg-blue-600 hover:text-white')}>Bizning jamoa</button>
+                    </div>
 
                 </div>
-                <div className='p-4'>
-                    <img src={aboutus} alt="" />
+              {
+                tab==='education' ? 
+                <div className='grid grid-cols-3 px-10 gap-10 mt-10 rounded-lg'>
+                   <img src={one} alt="" /> 
+                   <img src={two} alt="" /> 
+                   <img src={three} alt="" /> 
                 </div>
-            </div>
-            <section className="bg-white dark:bg-gray-900">
-                <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
-                    <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
-                        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our team</h2>
-                        <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind</p>
-                    </div>
-                    <div className="grid gap-8 lg:gap-16 sm:grid-cols-3 lg:grid-cols-3">
+                : (
+                    tab === 'library' ? 
+                    <>
+                    <p className='px-10'>
+                        O‘zbekiston Respublikasi Prezidentining “Geologiya fanlari universitetini tashkil etish to‘g‘risida”gi 2020-yil 8-iyundagi qarori asosida universitet Axborot-resurs markazi o‘z ish faoliyatini boshlagan. Universitet Axborot-resurs Markazi tarmog’ini tashkil qilishda zamon talablarini hisobga olgan holda, o’sib kelayotgan yosh avlodning intelliktual ehtiyojlarini qondirishga shu bilan birga aholini yanada kengroq va tizimli axborot bilan ta’minlash uchun kerakli bo’lgan sharoitlarni yaratish maqsadida O‘zbekiston Respublikasi Prezidentining 2006-yil 20-iyundagi PQ-381-sonli qarori va Oliy ta’lim vazirligining 2006-yil 29-dekabrdagi 295-sonli buyrug’iga asosan Axborot-resurs markaziga aylantirildi. 2011-yil 23-fevral “2011-2015-yillarda axborot-kommunikatsiya texnologiyalari asosida axborot kutubxona va axborot-resurs хizmatlarini yanada sifatli rivojlantirish chora-tadbirlari to’g’risida”gi 1487-sonli qarori va O’zbekiston Respublikasining 2011-yil 13-aprel “Axborot-kutubxona faoliyati to’g’risida”gi PQ-280-sonli qonuni va 2019-yil 7-iyundagi PQ-4354-sonli O’zbekiston Respublikasi Prezidentining “O’zbekistin Respublikasi aholisiga Axborot-kutubxona xizmati ko’rsatishni yanada takomillashtirish” to’g’risidagi qarorlari asosida ishlar olib borilmoqda. Geologiya fanlari universitetini Axborot-resurs markazi universitet hududida joylashgan.Qulayligi shundan iboratki u talabalar turar joyi markazida joylashgan bo‘lib, talabaning darsdan keyingi bo‘sh vaqtida ARMdan samarali foydalanishiga imkon yaratadi. Professor-o‘qituvchilar, doktorantlar, talaba va magistirlar uchun ham alohida o’quv zallarida xizmat ko’rsatiladi.
+                    </p>
+                     <div className='grid grid-cols-3 px-10 gap-10 mt-10 rounded-lg'>
+                   <img src={one} alt="" /> 
+                   <img src={two} alt="" /> 
+                   <img src={three} alt="" /> 
+                </div>
+                    </>
+                    :
+                    <div>
+                        <div className="grid gap-8 lg:gap-16 sm:grid-cols-3 lg:grid-cols-3">
                         <div className="text-center text-gray-500 dark:text-gray-400">
-                            <img className="mx-auto mb-4 w-36 h-36 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="Bonnie Avatar" />
-                            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                <a href="#">Bonnie Green</a>
+                            <img className="mx-auto mb-4 w-48 h-48 rounded-full" src={shoxsanam} alt="Bonnie Avatar" />
+                            <h3 className="mb-1 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                <a href="#">Shodmanova Shohsanam Abduxamitovna</a>
                             </h3>
-                            <p>CEO/Co-founder</p>
+                            <p>1-toifali kutubxonachi</p>
                             <ul className="flex justify-center mt-4 space-x-4">
                                 <li>
                                     <a href="#" className="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
@@ -51,11 +90,11 @@ const AboutUs = () => {
                             </ul>
                         </div>
                         <div className="text-center text-gray-500 dark:text-gray-400">
-                            <img className="mx-auto mb-4 w-36 h-36 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/helene-engels.png" alt="Helene Avatar" />
+                            <img className="mx-auto mb-4 w-48 h-48 rounded-full" src={zebiniso} alt="Helene Avatar" />
                             <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                <a href="#">Helene Engels</a>
+                                <a href="#">Abduganiyeva Zebiniso Melikovna</a>
                             </h3>
-                            <p>CTO/Co-founder</p>
+                            <p>1-toifali kutubxonachi</p>
                             <ul className="flex justify-center mt-4 space-x-4">
                                 <li>
                                     <a href="#" className="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
@@ -80,11 +119,11 @@ const AboutUs = () => {
                             </ul>
                         </div>
                         <div className="text-center text-gray-500 dark:text-gray-400">
-                            <img className="mx-auto mb-4 w-36 h-36 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" alt="Jese Avatar" />
+                            <img className="mx-auto mb-4 w-48 h-48 rounded-full" src={feruza} alt="Jese Avatar" />
                             <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                <a href="#">Jese Leos</a>
+                                <a href="#">Tuxtayeva Feruza Tulkunovna</a>
                             </h3>
-                            <p>SEO &amp; Marketing</p>
+                            <p>1-toifali kutubxonachi</p>
                             <ul className="flex justify-center mt-4 space-x-4">
                                 <li>
                                     <a href="#" className="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
@@ -109,7 +148,7 @@ const AboutUs = () => {
                             </ul>
                         </div>
                         <div className="text-center text-gray-500 dark:text-gray-400">
-                            <img className="mx-auto mb-4 w-36 h-36 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="Joseph Avatar" />
+                            <img className="mx-auto mb-4 w-48 h-48 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="Joseph Avatar" />
                             <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                                 <a href="#">Joseph Mcfall</a>
                             </h3>
@@ -138,11 +177,11 @@ const AboutUs = () => {
                             </ul>
                         </div>
                         <div className="text-center text-gray-500 dark:text-gray-400">
-                            <img className="mx-auto mb-4 w-36 h-36 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png" alt="Sofia Avatar" />
+                            <img className="mx-auto mb-4 w-48 h-48 rounded-full" src={shahzoda} alt="Sofia Avatar" />
                             <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                <a href="#">Lana Byrd</a>
+                                <a href="#">Said-Muratova Shahzoda Begim Shuxratovna</a>
                             </h3>
-                            <p>Web Designer</p>
+                            <p>2-toifali kutubxonachi</p>
                             <ul className="flex justify-center mt-4 space-x-4">
                                 <li>
                                     <a href="#" className="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
@@ -167,11 +206,11 @@ const AboutUs = () => {
                             </ul>
                         </div>
                         <div className="text-center text-gray-500 dark:text-gray-400">
-                            <img className="mx-auto mb-4 w-36 h-36 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/thomas-lean.png" alt="Leslie Avatar" />
+                            <img className="mx-auto mb-4 w-48 h-48 rounded-full" src={dildora} alt="Leslie Avatar" />
                             <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                <a href="#">Leslie Livingston</a>
+                                <a href="#">Agzamova Dildora Qudratillayevna</a>
                             </h3>
-                            <p>Graphic Designer</p>
+                            <p>1-toifali kutubxonachi</p>
                             <ul className="flex justify-center mt-4 space-x-4">
                                 <li>
                                     <a href="#" className="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
@@ -196,7 +235,7 @@ const AboutUs = () => {
                             </ul>
                         </div>
                         <div className="text-center text-gray-500 dark:text-gray-400">
-                            <img className="mx-auto mb-4 w-36 h-36 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar" />
+                            <img className="mx-auto mb-4 w-48 h-48 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar" />
                             <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                                 <a href="#">Michael Gough</a>
                             </h3>
@@ -225,7 +264,7 @@ const AboutUs = () => {
                             </ul>
                         </div>
                         <div className="text-center text-gray-500 dark:text-gray-400">
-                            <img className="mx-auto mb-4 w-36 h-36 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/neil-sims.png" alt="Neil Avatar" />
+                            <img className="mx-auto mb-4 w-48 h-48 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/neil-sims.png" alt="Neil Avatar" />
                             <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                                 <a href="#">Neil Sims</a>
                             </h3>
@@ -254,8 +293,13 @@ const AboutUs = () => {
                             </ul>
                         </div>
                     </div>
-                </div>
-            </section>
+                    </div>
+                )
+              }
+
+
+            </div>
+           
         </>
 
     )

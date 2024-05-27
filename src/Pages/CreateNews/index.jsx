@@ -28,7 +28,7 @@ const CreateNews = () => {
   const formdata = new FormData();
   formdata.append("title", name);
   formdata.append("info", author);
-  formdata.append("fotos", arr.push(selectedFile),selectedFile.name);
+  formdata.append("fotos", arr?.push(selectedFile));
   formdata.append("status", caption);
   formdata.append("created", new Date());
 
