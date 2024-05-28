@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 ::-webkit-scrollbar {
-  width: 2px;
+  width: 1px;
 }
 
 /* Track */
@@ -13,7 +13,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: blue;
+  background: rgb(148, 148, 235);
 }
 
 /* Handle on hover */

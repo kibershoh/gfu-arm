@@ -109,7 +109,7 @@ const Navbar = () => {
                   to={nav.path}
                   className={
                    active === nav.title
-                      ? "flex mx-4 text-blue-800 text-lg font-semibold border-b-2 border-blue-800"
+                      ? "flex mx-4 text-violet-800 text-lg font-semibold border-b-2 border-violet-800"
                       : "flex mx-4 items-center text-lg font-semibold"
                   }
                   onClick={() => {
@@ -128,10 +128,10 @@ const Navbar = () => {
 
         <div className="flex items-center">
           <div className="mr-3 max-md:hidden">
-            <Link to={'/login'} className="text-xl  bg-blue-600 hover:bg-blue-700 p-1 px-2 rounded text-white">Login</Link>
+            <Link to={'/login'} className="text-xl  bg-[#7c3aed] hover:bg-[#6d28d9] p-1 px-2 rounded text-white">Login</Link>
           </div>
           <div>
-            <select className="outline-none p-1 text-dark font-semibold text-lg border-2 border-blue-600  rounded-lg  bg-transparent	" >
+            <select className="outline-none p-1 text-dark font-semibold text-lg border-2 border-[#6d28d9]  rounded-lg  bg-transparent	" >
               <option value="en" className="text-md text-black  bg-transparent  font-semibold mb-10 outline-none" style={{ height: '30px' }}>ENG</option>
               <option value="uz" className="text-md text-black  bg-transparent  font-semibold mb-10 outline-none">UZB</option>
             </select>
@@ -176,7 +176,7 @@ const Navbar = () => {
               key={nav.id}
               className={clsx(
                 "text-lg mb-3 mr-7 pr-3 links",
-                active === nav.title ? " border-r-4 border-blue-400" : " "
+                active === nav.title ? " border-r-4 border-violet-400" : " "
               )}
             >
               <NavLink
@@ -184,7 +184,7 @@ const Navbar = () => {
                 className={clsx(
                   "flex p-1 px-2 rounded rounded-lg",
                   active === nav.title
-                    ? "w-auto text-blue-800 bg-blue-200 "
+                    ? "w-auto text-violet-800 bg-violet-200 "
                     : "items-center"
                 )}
                 onClick={() => {
@@ -200,7 +200,7 @@ const Navbar = () => {
         </ul>
         <div className="px-3 pt-80">
           <div className="ml-3">
-            <Link className="text-xl  bg-blue-600 hover:bg-blue-700 p-1 px-2 rounded text-white">Login</Link>
+            <Link className="text-xl  bg-[#7c3aed] hover:bg-[#6d28d9] p-1 px-2 rounded text-white">Login</Link>
           </div>
         </div>
       </nav>

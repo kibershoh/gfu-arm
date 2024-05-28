@@ -24,17 +24,17 @@ const AboutUs = () => {
                 <div className='my-20'>
                     <div className=' mx-auto w-full flex justify-around'>
                         <button onClick={() => setTab('education')} className={clsx(
-                            tab === 'education' ? 'border bg-blue-600 text-white p-2 rounded-lg border-blue-600 shadow-sm ' : '',
+                            tab === 'education' ? 'border bg-violet-600 text-white p-2 rounded-lg border-violet-600 shadow-sm ' : '',
 
-                            'text-2xl max-md:text-sm max-md:p-1 rounded-lg hover:bg-blue-600 hover:text-white'
+                            'text-2xl max-md:text-sm max-md:p-1 rounded-lg hover:bg-violet-600 hover:text-white'
                         )}>O'quv zallari </button>
 
                         <button onClick={() => setTab('library')} className={clsx(
-                            tab === 'library'  ? "border bg-blue-600 text-white p-2 rounded-lg border-blue-600 shadow-sm " : '',
-                            'text-2xl max-md:text-sm max-md:p-1 rounded-lg hover:bg-blue-600 hover:text-white p-2'
+                            tab === 'library'  ? "border bg-violet-600 text-white p-2 rounded-lg border-violet-600 shadow-sm " : '',
+                            'text-2xl max-md:text-sm max-md:p-1 rounded-lg hover:bg-violet-600 hover:text-white p-2'
                         )}>Kutubxona haqida</button>
-                        <button onClick={() => setTab('team')} className={clsx(tab === 'team' ? "border bg-blue-600 text-white p-2 rounded-lg border-blue-600 shadow-sm" : '',
-                            'text-2xl max-md:text-sm max-md:p-1 rounded-lg hover:bg-blue-600 hover:text-white')}>Bizning jamoa</button>
+                        <button onClick={() => setTab('team')} className={clsx(tab === 'team' ? "border bg-violet-600 text-white p-2 rounded-lg border-violet-600 shadow-sm" : '',
+                            'text-2xl max-md:text-sm max-md:p-1 rounded-lg hover:bg-violet-600 hover:text-white')}>Bizning jamoa</button>
                     </div>
 
                 </div>

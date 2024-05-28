@@ -52,7 +52,7 @@ const Footer = () => {
 defaultCountry='uz'                    
                     placeholder="Enter phone number"
                 />
-                 <button className='bg-blue-600 ml-auto rounded-lg p-2 text-white hover:bg-blue-700 mt-2 w-44 text-lg font-semibold'>Submit</button>
+                 <button className='bg-violet-600 ml-auto rounded-lg p-2 text-white hover:bg-violet-700 mt-2 w-44 text-lg font-semibold'>Submit</button>
             </div>
             <div className="flex items-center max-md:justify-around mt-4">
                    
