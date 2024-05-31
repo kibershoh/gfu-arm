@@ -143,7 +143,7 @@ const Navbar = () => {
             className={
               profile
                 ? "absolute top-20 bg-white border shadow-lg w-auto p-3 right-3 max-md:w-1/2 max-lg:w-1/2 max-sm:w-11/12"
-                : "absolute top-20 bg-white border shadow-lg w-auto p-3 hidden flex right-3"
+                : "absolute top-20 bg-white border shadow-lg w-auto p-3 hidden  right-3"
             }
           >
             <div className="w-full relative">
@@ -182,7 +182,7 @@ const Navbar = () => {
               <NavLink
                 to={nav.path}
                 className={clsx(
-                  "flex p-1 px-2 rounded rounded-lg",
+                  "flex p-1 px-2 rounded",
                   active === nav.title
                     ? "w-auto text-violet-800 bg-violet-200 "
                     : "items-center"

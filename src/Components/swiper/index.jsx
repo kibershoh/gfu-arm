@@ -50,7 +50,7 @@ const SwiperSlider = () => {
             <div className='flex flex-col items-start'>
           <h1 className='text-3xl font-semibold mb-10'>O'tkan Kunlar </h1>
               <p className='mb-3 text-xl'> Modomiki, biz yangi davrga oyoq qo‘ydik, bas, biz har bir yo‘sunda ham shu yangi davrning yangiliklari ketidan ergashamiz va shunga o‘xshash dostonchiliq, ro‘monchiliq va hikoyachiliqlarda ham yangarishg‘a, xalqimizni shu zamonning «Tohir-Zuhra»lari, «Chor darvesh»lari, «Farhod-Shirin» va «Bahromgo‘r»lari bilan tanishdirishka o‘zimizda majburiyat his etamiz.</p>
-              <button   className='bg-blue-600 p-2 mt-20 rounded text-white max-md:mt-4 hover:bg-blue-700  hover:bg-blue-700'>Read More </button>
+              <button   className='bg-blue-600 p-2 mt-20 rounded text-white max-md:mt-4  hover:bg-blue-700'>Read More </button>
             </div>
             <div className='w-full '>
 
