@@ -6,7 +6,7 @@ import otkan from '../../assets/homeImage.jpg'
 import LogoCarousel from '../../UI/animation'
 import SliderDesign2 from '../../UI/animation2'
 import { useNavigate } from 'react-router-dom'
-
+import {motion} from 'framer-motion'
 const Home = () => {
   const navigate = useNavigate()
   return (
@@ -27,10 +27,14 @@ const Home = () => {
               </div>
               <button className='bg-white w-64  max-md:w-auto p-2 mt-3 rounded text-violet-600 border-violet-600 hover:text-white border max-md:mt-4   hover:bg-violet-700' onClick={()=>navigate('')}>Elektron Katalog </button>
                       </div>
-            <div className='w-3/4 max-md:w-full '>
+            <motion.div className='w-3/4 max-md:w-full '
+             initial={{y:-100}}
+                animate = {{y:0}}
+                transition={{delay:0.1}}
+            >
 
-             <img src={otkan}  className='w-full h-full mx-auto animate-bounce' alt="" />
-           </div>
+             <img src={otkan}  className='w-full h-full mx-auto ' alt="" />
+           </motion.div>
           </div>
         
       
