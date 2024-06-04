@@ -128,10 +128,10 @@ const Navbar = () => {
 
         <div className="flex items-center">
           <div className="mr-3 max-md:hidden">
-            <Link to={'/login'} className="text-xl  bg-[#7c3aed] hover:bg-[#6d28d9] p-1 px-2 rounded text-white">Login</Link>
+            <Link to={'/login'} className="text-lg  bg-[#7c3aed] hover:bg-[#6d28d9] p-1 px-2 rounded text-white">Login</Link>
           </div>
           <div>
-            <select className="outline-none p-1 text-dark font-semibold text-lg border-2 border-[#6d28d9]  rounded-lg  bg-transparent	" >
+            <select className="outline-none p-1 text-dark font-semibold text-sm border-2 border-[#6d28d9]  rounded-lg  bg-transparent	" >
               <option value="en" className="text-md text-black  bg-transparent  font-semibold mb-10 outline-none" style={{ height: '30px' }}>ENG</option>
               <option value="uz" className="text-md text-black  bg-transparent  font-semibold mb-10 outline-none">UZB</option>
             </select>

@@ -2,15 +2,7 @@ import React, { useState } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Modal = ({info}) => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  const toggleModal = () => {
-    setIsVisible(!isVisible);
-  };
-
-  const closeModal = () => {
-    setIsVisible(false);
-  };
+x
 
   return (
     <div>

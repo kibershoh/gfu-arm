@@ -56,7 +56,7 @@ const [show,setShow] = useState(false)
       }}
         className="shadow rounded mx-2   pb-10">
           <div className='flex flex-col max-lg:flex-cols relative'>
-    <div className='w-full bg-violet-50 p-2'>
+    <div className='w-9/12 bg-violet-50 p-2'>
             <img src={book.image} className='grid rotate-2 rounded-lg grid-cols-1 h-52 mx-auto max-md:w-32 max-md:h-32 hover:rotate-0 duration-500 hover:-translate-y-12   object-cover hover:scale-150 transform origin-bottom' />
 
     </div>
