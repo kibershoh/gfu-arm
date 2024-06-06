@@ -2,13 +2,15 @@ import React, { useState } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Modal = ({info}) => {
-x
 
+const toogleModal = ()=>{
+
+}
   return (
     <div>
      <div className='absolute bottom-4 right-4'>
          <button
-        onClick={toggleModal}
+        onClick={toogleModal}
         className=" place-content-stretch text-white bg-violet-600 hover:bg-violet-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         type="button"
       >
