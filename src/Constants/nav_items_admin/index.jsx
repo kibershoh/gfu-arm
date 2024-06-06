@@ -1,8 +1,8 @@
 export const navLinks_admin = [
   {
-    id: 'home',  
-    title: "Home",
-    path: '/',
+    id: 'menu',  
+    title: "Menu",
+    path: '/admin',
   },
   {
     id: 'Create Book',
