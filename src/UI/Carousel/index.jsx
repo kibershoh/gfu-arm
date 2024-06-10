@@ -4,7 +4,8 @@ import { wrap } from "@popmotion/popcorn"
 
 import "./styles.scss"
 import { IMAGES } from "../../Constants/CarouselImage"
-
+import { GoArrowRight,GoArrowLeft } from "react-icons/go";
+ 
 
 const sliderVariants = {
   incoming: direction => ({
@@ -55,10 +56,10 @@ const CarouselSlide = () => {
   }
 
   return (
-    <main>
-      <div className="slider-container">
-        <div className="slider">
-          <AnimatePresence initial={false} custom={direction}>
+    <main className="flex">
+      <div className="slider-container ">
+        <div className="slider w-10/12 h-80 rounded-md">
+          <AnimatePresence  initial={false} custom={direction}>
             <motion.div
               key={imageCount}
               style={{
@@ -69,6 +70,7 @@ const CarouselSlide = () => {
               initial="incoming"
               animate="active"
               exit="exit"
+              
               transition={sliderTransition}
               drag="x"
               dragConstraints={{ left: 0, right: 0 }}
@@ -79,20 +81,20 @@ const CarouselSlide = () => {
           </AnimatePresence>
         </div>
 
-        <div className="buttons">
-          <button onClick={() => swipeToImage(-1)}>PREV</button>
-          <button onClick={() => swipeToImage(1)}>NEXT</button>
+        <div className="flex gap-10 mt-3">
+          <button className="hover:scale-110 duration-1000 hover:text-violet-700" onClick={() => swipeToImage(-1)}><GoArrowLeft size={25}/></button>
+          <button className="hover:scale-110 duration-1000 hover:text-violet-700" onClick={() => swipeToImage(1)}><GoArrowRight size={25}/></button>
         </div>
       </div>
 
-      <div className="thumbnails">
+      <div className="thumbnails flex justify-center gap-20">
         {IMAGES.map(image => (
           <div
             key={image.id}
             onClick={() => skipToImage(image.id)}
             className="thumbnail-container"
           >
-            <img src={image.imageSrc} alt="Musician" />
+            <img className="rounded " src={image.imageSrc} alt="Musician" />
             <div
               className={`active-indicator ${
                 image.id === activeImageIndex ? "active" : null

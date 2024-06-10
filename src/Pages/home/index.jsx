@@ -41,7 +41,6 @@ const Home = () => {
       
       <SliderDesign2/>
       <News/>
-      <CarouselSlide/>
     </div>
   )
 }

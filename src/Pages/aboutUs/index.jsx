@@ -10,6 +10,7 @@ import shoxsanam from '../../assets/person/shoxsanam.png';
 import zebiniso from '../../assets/person/zebiniso.png';
 import clsx from 'clsx';
 import SocialNetwork from './socialNetwork';
+import CarouselSlide from '../../UI/Carousel';
 
 const AboutUs = () => {
     const [value, setValue] = useState(0);
@@ -22,7 +23,7 @@ const AboutUs = () => {
     return (
         <>
             <div className='mt-24'>
-                <div className='my-20'>
+                <div className='my-5'>
                     <div className=' mx-auto w-full flex justify-around'>
                         <button onClick={() => setTab('education')} className={clsx(
                             tab === 'education' ? 'border bg-violet-600 text-white p-2 rounded-lg border-violet-600 shadow-sm ' : '',
@@ -41,11 +42,7 @@ const AboutUs = () => {
                 </div>
               {
                 tab==='education' ? 
-                <div className='grid grid-cols-3 px-10 gap-10 mt-10 rounded-lg'>
-                   <img src={one} alt="" /> 
-                   <img src={two} alt="" /> 
-                   <img src={three} alt="" /> 
-                </div>
+                <CarouselSlide/>
                 : (
                     tab === 'library' ? 
                     <>
