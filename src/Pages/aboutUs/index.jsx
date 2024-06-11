@@ -11,6 +11,7 @@ import zebiniso from '../../assets/person/zebiniso.png';
 import clsx from 'clsx';
 import SocialNetwork from './socialNetwork';
 import CarouselSlide from '../../UI/Carousel';
+import Carousel3d from '../../UI/CarouseThree';
 
 const AboutUs = () => {
     const [value, setValue] = useState(0);
@@ -42,7 +43,7 @@ const AboutUs = () => {
                 </div>
               {
                 tab==='education' ? 
-                <CarouselSlide/>
+                <Carousel3d/>
                 : (
                     tab === 'library' ? 
                     <>

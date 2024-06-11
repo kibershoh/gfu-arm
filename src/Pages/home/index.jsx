@@ -8,6 +8,7 @@ import SliderDesign2 from '../../UI/animation2'
 import { useNavigate } from 'react-router-dom'
 import {motion} from 'framer-motion'
 import CarouselSlide from '../../UI/Carousel'
+import Carousel3d from '../../UI/CarouseThree'
 const Home = () => {
   const navigate = useNavigate()
   return (
@@ -41,6 +42,8 @@ const Home = () => {
       
       <SliderDesign2/>
       <News/>
+        
+      <Carousel3d/>
     </div>
   )
 }
