@@ -19,6 +19,11 @@ export const navLinks_admin = [
     title: "News",
     path: '/admin/news',
   },
+  {
+    id: 'create_news',
+    title: "Create News",
+    path: '/admin/create-news',
+  },
    
   
 

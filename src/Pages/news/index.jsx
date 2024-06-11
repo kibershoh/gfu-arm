@@ -43,6 +43,9 @@ const News = () => {
     fetchBooks();
   }, []);
    
+
+  // Modal
+  
   return (
     <div className='mt-20'>
       {
@@ -60,8 +63,6 @@ const News = () => {
                   {/* <p className='pt-3'>{item.info}
 
                   </p> */}
-                  {/* <span></span> */}
-                  {/* <Modal info={item.info}/> */}
                 </div>
               ))
 
@@ -71,7 +72,6 @@ const News = () => {
           </div>
       }
                           {/* <ImageSlider/> */}
-
     </div>
   )
 }

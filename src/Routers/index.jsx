@@ -2,12 +2,12 @@ import React from 'react'
 import {  Route, Routes } from 'react-router-dom'
 import { Books, Contact, Home, News } from '../Pages'
 import Login from '../Pages/login'
-import AboutUs from '../Pages/aboutUs'
-import CreateBook from '../Admin/Pages/CreateBook'
+ import CreateBook from '../Admin/Pages/CreateBook'
 import CreateNews from '../Pages/CreateNews'
 import Dashboard from '../Admin/Components/Dashboard'
 import PrivateRoute from './privateRoute'
 import BookListAdmin from '../Admin/Components/BookListAdmin'
+import AboutUs from '../Pages/aboutUs'
 
 const AllRouters = () => {
   return (
@@ -27,6 +27,7 @@ const AllRouters = () => {
           <Route path='admin/create' element={<CreateBook/>}/>
           <Route path='admin/all-books' element={<BookListAdmin/>}/>
           <Route path='admin/news' element={<News/>}/>
+          <Route path='admin/create-news' element={<CreateNews/>}/>
         {/* <Route path='dashboard/all-products' element={<AllProducts/>}/>
         <Route path='dashboard/add-products' element={<AddProduct/>}/>
         <Route path='dashboard/users' element={<Users/>}/>

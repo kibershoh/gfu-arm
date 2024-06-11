@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import ShowMoreText2 from '../../../UI/showMoreText2';
 import axios from 'axios';
-const BookCardAdmin = ({ book }) => {
+const BookCardAdmin = ({ book,onDelete }) => {
   const [likes, setLikes] = useState(false);
   const [readMore, setReadMore] = useState(false);
   const [likeCount, setLikeCount] = useState(0);
@@ -44,16 +44,15 @@ const [show,setShow] = useState(false)
 
       if (response.status === 204) {
         console.log('Kitob o\'chirildi');
-        // qo'shimcha amallar...
+        onDelete(book.id); // Call the onDelete prop to remove the book from the list
       } else {
         console.log('Xatolik sodir bo\'ldi');
-        // qo'shimcha xatoliklar bilan ishlash
       }
     } catch (error) {
       console.error('Xatolik yuz berdi:', error);
-      // qo'shimcha xatoliklar bilan ishlash
     }
   };
+
 
   return (
     <>

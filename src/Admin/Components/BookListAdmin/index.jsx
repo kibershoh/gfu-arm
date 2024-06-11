@@ -4,11 +4,14 @@ import BookCardAdmin from '../BookCardAdmin';
 import LoaderComponent from '../../../UI/LoaderComponent';
 
 const BookListAdmin = () => {
-    const [result, setResult] = useState('');
   const [error, setError] = useState(null);
   const [data,setData] = useState([])
   const navigate = useNavigate()
    
+
+  const handleDelete = (id) => {
+    setData(data.filter(book => book.id !== id));
+  };
 
    const [nextUrl, setNextUrl] = useState("https://librarygfu.pythonanywhere.com/en-us/books/book/");
     const [previousUrl, setPreviousUrl] = useState(null);
@@ -55,7 +58,7 @@ const [loading,setLoading] = useState(false)
      <div id='bookListAdmin' className='grid grid-cols-4 max-xl:grid-cols-2 max-md:grid-cols-1 pt-20  gap-6 px-16 max-md:px-1'>
     {
         data.map((book)=>(
-            <BookCardAdmin key={book.id} book = {book}/>
+            <BookCardAdmin key={book.id} book = {book} onDelete = {handleDelete}/>
         ))
     }
     <div>
