@@ -1,15 +1,18 @@
 import React from 'react'
 import News from '../news'
-import otkan from '../../assets/homeImage.jpg'
+import otkan from '../../assets/bghome3.jpg'
 import SliderDesign2 from '../../UI/animation2'
 import { useNavigate } from 'react-router-dom'
 import {motion} from 'framer-motion'
+
+import './styles.scss'
+import { Tilt } from 'react-tilt'
 const Home = () => {
   const navigate = useNavigate()
   return (
     <div>
       {/* <SwiperSlider/> */}
-       <div className='w-full h-screen  flex justify-between max-lg:flex-col max-md:justify-center items-center   px-10 max-lg:mx-2 max-md:gap-8 max-md:mt-20 max-md:px-3 '>
+       <div className=' custom_gradient w-full h-screen max-md:h-auto max-md:pb-10  flex justify-between max-lg:flex-col max-md:justify-center items-center   px-10 max-lg:mx-2 max-md:gap-8 max-md:mt-20 max-md:px-3 mb-10'>
            
             <div className='flex flex-col items-start w-full'>
           <h1 className='text-5xl  font-semibold mb-4 w-full max-md:text-3xl'>Geologiya fanlar universiteti </h1>
@@ -29,8 +32,17 @@ const Home = () => {
                 animate = {{y:0}}
                 transition={{delay:0.1}}
             >
+<Tilt
+ options={{
+              max: 10,
+              transition: 1.6,
+              scale: 1.09,
+              speed: 15,
+            }}
+>
 
-             <img src={otkan}  className='w-full h-full mx-auto ' alt="" />
+             <img src={otkan}  className='    rounded-full shadow-lg w-96    h-96 max-md:w-auto max-md:h-auto   p-3 mx-auto ' alt="" />
+</Tilt>
            </motion.div>
           </div>
         

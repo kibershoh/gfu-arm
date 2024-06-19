@@ -90,9 +90,10 @@ const Navbar = () => {
         )}
       >
         <Link to={"/"} className="block max-lg:hidden">
-          <h1 className="text-2xl text-white max-xl:text-sm font-bold logotip pl-2">
+          <h1 className="text-2xl flex items-center gap-2 text-white max-xl:text-sm font-bold logotip pl-2">
 
             <img className="w-16 h-16" src={logotip} alt="" />
+            <h1 className="text-black w-80 text-lg font-inter">Geologiya fanlari universiteti <br /> online kutubxonasi</h1>
           </h1>
         </Link>
 
@@ -127,7 +128,7 @@ const Navbar = () => {
            
 
         <div className="flex items-center">
-          <div className="mr-3 max-md:hidden">
+          <div className="mr-3 ">
             <Link to={'/login'} className="text-lg  bg-[#7c3aed] hover:bg-[#6d28d9] p-1 px-2 rounded text-white">Login</Link>
           </div>
           <div>

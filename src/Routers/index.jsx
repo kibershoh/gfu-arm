@@ -8,6 +8,7 @@ import Dashboard from '../Admin/Components/Dashboard'
 import PrivateRoute from './privateRoute'
 import BookListAdmin from '../Admin/Components/BookListAdmin'
 import AboutUs from '../Pages/aboutUs'
+import NewsDetails from '../Pages/newsDetails'
 
 const AllRouters = () => {
   return (
@@ -20,6 +21,7 @@ const AllRouters = () => {
         <Route path={'/contact'} element={<Contact />} />
         <Route path={'/about'} element={<AboutUs />} />
         <Route path={'/create-news'} element={<CreateNews />} />
+        <Route path='/newsdetails/:id' element={<NewsDetails/>}/>
         {/* Admin */}
         <Route path={'/login'} element={<Login />} />
          <Route path='/*' element={<PrivateRoute/>}>

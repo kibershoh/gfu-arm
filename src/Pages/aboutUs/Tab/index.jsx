@@ -33,16 +33,16 @@ export function TabsCustomAnimation() {
   ];
  
   return (
-    <Tabs id="custom-animation"  value="oquv_zallari">
-      <TabsHeader>
+    <Tabs id="custom-animation"  value="oquv_zallari" className="grid grid-cols-6 max-md:grid-rows-6 max-md:grid-flow-col items-start">
+      <TabsHeader className="grid grid-cols-1 max-md:grid-cols-3 text-center w-full     justify-between gap-10 col-span-2   ">
         {data.map(({ label, value }) => (
-          <Tab className=" text-xl shadow-2xl text-violet-700"  key={value} value={value}>
-            {label}
+          <Tab className="  max-md:w-80 px-2 text-left  text-xl max-md:text-lg   text-violet-700"  key={value} value={value}>
+             {label}
           </Tab>
         ))}
       </TabsHeader>
       <TabsBody
-      className=""
+      className="col-span-5 w-full max-md:row-span-4"
         animate={{
           initial: { y: 250 },
           mount: { y: 0 },
@@ -50,7 +50,7 @@ export function TabsCustomAnimation() {
         }}
       >
         {data.map(({ value, desc }) => (
-          <TabPanel key={value} value={value}>
+          <TabPanel className="w-full h-auto" key={value} value={value}>
             {desc}
           </TabPanel>
         ))}
