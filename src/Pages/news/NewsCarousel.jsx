@@ -47,7 +47,7 @@ const toDetails = (id) => {
   }
   return (
     <div className="flex flex-col items-center">
-      <div className="grid grid-cols-3 max-md:grid-cols-1 max-md:px-2 px-20 gap-10">
+      <div className="grid grid-cols-3 2xl:grid-cols-4 2xl:gap-20 2xl:px-36 max-md:grid-cols-1 max-md:px-2 px-20 gap-20">
         {getCurrentCards()?.map((card,index) => (
            <div key={card.id} className='p-4  shadow rounded relative pb-16'>
                   <div className="" onClick={() => toDetails(card.id)}>
