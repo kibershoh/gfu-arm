@@ -7,6 +7,7 @@ import {motion} from 'framer-motion'
 
 import './styles.scss'
 import { Tilt } from 'react-tilt'
+import BookListHome from '../../UI/BookListHome'
 const Home = () => {
   const navigate = useNavigate()
   return (
@@ -20,12 +21,12 @@ const Home = () => {
           <h2>
 
           </h2>
-              <div className='flex max-md:grid max-md:grid-cols-2 gap-4 mt-10'>
-                <button  className='bg-violet-600 w-44 max-md:w-36 p-2 mt-3 rounded text-white max-md:mt-4   hover:bg-violet-700' onClick={()=>navigate('https://catalog.uzgeouniver.uz/cgi-bin/irbis64r_plus/cgiirbis_64_ft.exe?C21COM=F&I21DBN=IBIS_FULLTEXT&P21DBN=IBIS&Z21ID=Guest&lng=uz&S21CNR=5')}>Kitoblar </button>
-              <button  className='bg-white w-44 max-md:w-36 p-2 mt-3 rounded text-violet-600 border-violet-600 hover:text-white border max-md:mt-4   hover:bg-violet-700'  onClick={()=>navigate('https://unilibrary.uz/')}>Unilibrary </button>
+              <div className='flex max-md:grid max-md:grid-cols-2 gap-10 mt-10'>
+                <a href='https://catalog.uzgeouniver.uz/cgi-bin/irbis64r_plus/cgiirbis_64_ft.exe?C21COM=F&I21DBN=IBIS_FULLTEXT&P21DBN=IBIS&Z21ID=Guest&lng=uz&S21CNR=5'  className='bg-violet-600 text-center w-44 text-2xl font-semibold tracking-wide max-md:w-36 p-2 mt-3 rounded text-white max-md:mt-4   hover:bg-violet-700' onClick={()=>navigate('https://catalog.uzgeouniver.uz/cgi-bin/irbis64r_plus/cgiirbis_64_ft.exe?C21COM=F&I21DBN=IBIS_FULLTEXT&P21DBN=IBIS&Z21ID=Guest&lng=uz&S21CNR=5')}>Kitoblar </a>
+              <a  className='bg-white text-center w-44 text-2xl font-semibold tracking-wide max-md:w-36 p-2 mt-3 rounded text-violet-600 border-violet-600 hover:text-white border max-md:mt-4   hover:bg-violet-700'  onClick={()=>navigate('https://unilibrary.uz/')}>Unilibrary </a>
     
               </div>
-              <button className='bg-white w-64  max-md:w-auto p-2 mt-3 rounded text-violet-600 border-violet-600 hover:text-white border max-md:mt-4   hover:bg-violet-700' onClick={()=>navigate('')}>Elektron Katalog </button>
+              <a className='bg-white text-center w-64 text-2xl font-semibold tracking-wide  max-md:w-auto p-2 mt-3 rounded text-violet-600 border-violet-600 hover:text-white border max-md:mt-4   hover:bg-violet-700' onClick={()=>navigate('')}>Elektron Katalog </a>
                       </div>
             <motion.div className='w-3/4 max-md:w-full '
              initial={{y:-100}}
@@ -41,15 +42,19 @@ const Home = () => {
             }}
 >
 
-             <img src={otkan}  className='    rounded-full shadow-lg w-96    h-96 max-md:w-auto max-md:h-auto   p-3 mx-auto ' alt="" />
+             <img src={otkan}  className='    rounded-full shadow-lg w-96 2xl:w-[500px] 2xl:h-[500px]    h-96 max-md:w-auto max-md:h-auto   p-1 mx-auto ' alt="" />
 </Tilt>
            </motion.div>
           </div>
         
       
       <SliderDesign2/>
+      {/* <h1 className='text-3xl font-semibold pl-20'>Yangiliklar</h1> */}
       <News/>
-        
+      <br />
+      <br />
+      <br />
+        <BookListHome/>
     </div>
   )
 }

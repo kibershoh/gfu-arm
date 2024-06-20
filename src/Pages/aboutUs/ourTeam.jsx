@@ -54,20 +54,7 @@ const OurTeam = () => {
                             
                          </div>
                       
-                        <div className="text-gray-500 shadow-xl rounded text-center  dark:text-gray-400">
-                            
-                            <div className='w-full bg-violet-600 rounded-xl py-5'>
-                            <img className="mx-auto mb-4 w-48 h-48 rounded-full" src={shahzoda} alt="Sofia Avatar" />
-                                
-                            </div>
-                            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                <a href="#">Said-Muratova Shahzoda Begim Shuxratovna</a>
-                            </h3>
-                           
-                            <p>2-toifali kutubxonachi</p>
-                             <button className='bg-violet-600 text-white p-2 rounded my-3 hover:bg-violet-700  hover:scale-110 duration-700'>View More</button>
-                            
-                        </div>
+                        
                       
                     </div>
                     </div>

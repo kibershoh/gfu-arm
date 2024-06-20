@@ -6,7 +6,7 @@ import SliderImages from './sliderImages';
 import ImageSlider from './sliderImages';
 import Carousel from './NewsCarousel';
 // import Modal from './Modal';
-
+import   './styles.scss'
 
 const API_URL = 'https://librarygfu.pythonanywhere.com/en-us/books/book/';
 
@@ -50,7 +50,10 @@ const News = () => {
     navigate('/newsdetails/' + id)
   }
   return (
-    <div className='mt-20'>
+    <div className='mt-20 '>
+      <div className='news'>
+    <h1 className='text-4xl font-semibold  text-white'>Yangiliklar</h1>
+      </div>
      
                            <Carousel cards={news}/>
     </div>

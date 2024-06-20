@@ -1,0 +1,11 @@
+.news{
+   width: 100%;
+   margin: auto;
+   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../assets/news.jpg) center/cover no-repeat fixed;
+   background-size: cover;
+   height: 40vh;
+   display: flex; 
+   align-items: center;
+   justify-content: center;
+  
+ }

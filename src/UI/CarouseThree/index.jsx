@@ -23,7 +23,7 @@ const Carousel3d = () => {
   };
 
   return (
-    <div className="relative w-full px-2   pb-20">
+    <div className="relative w-full px-20   pb-20">
       <div className="flex justify-between items-center">
         <button
           onClick={goToPrevious}

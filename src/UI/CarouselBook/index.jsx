@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import BookCard from '../book';
+import clsx from 'clsx';
 
 const CarouselBooks = ({cards}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -52,19 +53,29 @@ const navigate = useNavigate()
         ))}
       </div>
       <div className="flex items-center space-x-4 mt-4">
+        {
+          Array.from({ length: totalPages }).length > 1 &&
         <button onClick={prevPage} className="p-2 bg-violet-600 hover:bg-violet-700 text-white rounded">Prev</button>
+        }
         <div className="flex space-x-2">
           {Array.from({ length: totalPages }).map((_, index) => (
             <button
               key={index}
               onClick={() => goToPage(index)}
-              className={`p-2 rounded ${index === currentIndex ? 'bg-violet-600 hover:bg-violet-700 text-white' : 'bg-gray-200 text-black'}`}
+              className={clsx(
+                `p-2 rounded  ${index === currentIndex ? 'bg-violet-600 hover:bg-violet-700 text-white' : 'bg-gray-200 text-black'}`,
+                (Array.from({ length: totalPages }).length) < 2 && 'hidden'
+                
+              )}
             >
-              {index + 1}
+              {index+1}
             </button>
           ))}
         </div>
+        {
+          Array.from({ length: totalPages }).length > 1 &&
         <button onClick={nextPage} className="p-2 bg-violet-600 hover:bg-violet-700 text-white rounded">Next</button>
+          }
       </div>
     </div>
   );
