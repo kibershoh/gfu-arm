@@ -46,9 +46,7 @@ const ReadMore = ()=>{
                  {text.length > 90 ? <>...</> : <></> }
                </span>
               </p>
-              {
-                text.length > 90 ? <button onClick={ReadMore} className='text-violet-600 absolute z-50 -bottom-10 ml-3' >Read more</button> : <></>
-              }
+             
                 
                 </>
              )

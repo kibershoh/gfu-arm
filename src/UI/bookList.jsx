@@ -3,6 +3,8 @@ import { booksData } from '../Constants/booksData'
 import BookCard from './book'
 import { useNavigate } from 'react-router-dom';
 import LoaderComponent from './LoaderComponent';
+import Carousel from '../Pages/news/NewsCarousel';
+import CarouselBooks from './CarouselBook';
 
 const BookList = () => {
     const [result, setResult] = useState('');
@@ -54,29 +56,16 @@ const BookList = () => {
         }
     };
 
-    const handleNext = () => {
-        if (nextUrl) {
-            fetchBooks(nextUrl)
-            navigate('#books')
-
-
-        }
-
-    };
-
-    const handlePrevious = () => {
-        if (previousUrl) fetchBooks(previousUrl);
-    };
+     console.log(data);
 
     return (
         <div>
             {
                 !loading ?
-                    <div id='bookList' className='grid grid-cols-3 max-xl:grid-cols-2 max-md:grid-cols-1  gap-6 px-16 max-md:px-1'>
+                    <div id='bookList' className=' max-xl:grid-cols-2 max-md:grid-cols-1  px-5 max-md:px-1'>
                         {
-                            data.map((book) => (
-                                <BookCard book={book} />
-                            ))
+                                   <CarouselBooks cards={data}/>
+
                         }
                         <div>
 
@@ -87,19 +76,7 @@ const BookList = () => {
                     :
                     <LoaderComponent />
             }
-            <div className='w-full text-right'>
-
-                {
-                    previousUrl &&
-                    <a className='bg-violet-600 mx-2 w-44 hover:scale-110 hover:bg-violet-700 p-2 rounded text-lg  text-white' onClick={handlePrevious} href={loading && '#booksId'} >{loading ? 'loading...' : 'Previous'}</a>
-
-                }
-                {
-                    nextUrl &&
-                    <a className='bg-violet-600 mx-2 w-44 hover:scale-110 hover:bg-violet-700 p-2 rounded text-lg  text-white' onClick={handleNext} href={loading && '#booksId'}>{loading ? 'loading...' : 'Next'}</a>
-                }
-
-            </div>
+            
         </div>
     )
 }
