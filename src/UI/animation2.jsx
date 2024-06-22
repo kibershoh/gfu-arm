@@ -2,14 +2,19 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaFigma, FaTwitter, FaGithub, FaInstagram, FaLinkedin, FaDiscord, FaSketch,   } from 'react-icons/fa';
 import img1 from '../assets/bgBooks3.jpg'
+import logo1 from '../assets/logotip/logo1.svg'
+import logo2 from '../assets/logotip/logo2.svg'
+import logo3 from '../assets/logotip/logo3.png'
+import logo4 from '../assets/logotip/logo4.png'
+import logo5 from '../assets/logotip/logo5.png'
+import logo6 from '../assets/logotip/logo6.png'
 const slides = [
-    { icon: <img src={img1} alt="" className='w-full m-2 rounded-lg h-full'/>, link: "https://www.figma.com/" },
-    { icon: <img src={img1} alt="" className='w-full m-2 rounded-lg h-full'/>, link: "https://twitter.com/" },
-    { icon: <img src={img1} alt="" className='w-full m-2 rounded-lg h-full'/>, link: "https://github.com/" },
-    { icon: <img src={img1} alt="" className='w-full m-2 rounded-lg h-full'/>,  link: "https://www.instagram.com/" },
-    { icon: <img src={img1} alt="" className='w-full m-2 rounded-lg h-full'/>, link: "https://www.linkedin.com/" },
-    { icon:<img src={img1} alt="" className='w-full m-2 rounded-lg h-full'/>, link: "https://discord.com/" },
-    { icon: <img src={img1} alt="" className='w-full m-2 rounded-lg h-full'/>, link: "https://www.sketch.com/" },
+    { icon: <img src={logo1} alt="" className='w-80 p-5 rounded-lg h-full'/>, link: "https://unilibrary.uz/" },
+    { icon: <img src={logo2} alt="" className='w-80 p-5 rounded-lg h-full'/>, link: "https://search.ebscohost.com/" },
+    { icon: <img src={logo3} alt="" className='w-80 p-5 rounded-lg h-full'/>,  link: "https://nbmgu.ru/" },
+    { icon: <img src={logo4} alt="" className='w-80 p-5 rounded-lg h-full'/>, link: "https://link.springer.com/" },
+    { icon:<img src={logo5} alt="" className='w-80 p-5 rounded-lg h-full'/>, link: "http://natlib.uz/" },
+    { icon: <img src={logo6} alt="" className='w-80 p-5 rounded-lg h-full'/>, link: "https://www.proquest.com/" },
 ];
 
 const SliderDesign2 = () => {
@@ -30,20 +35,20 @@ const SliderDesign2 = () => {
                     x: isHovered ? '0%' : ['0%', '-100%'],
                     transition: {
                         ease: 'linear',
-                        duration: 15,
+                        duration: 25,
                         repeat: isHovered ? 0 : Infinity,
                     }
                 }}
             >
                 {duplicatedSlides.map((slide, index) => (
-                    <div key={index} className="flex-shrink-0 py-20 " style={{ width:'200px',height:'200px' }}>
+                    <div key={index} className="flex-shrink-0 py-20 " style={{ width:'250px',height:'200px' }}>
                         <div
                          onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
                         className="flex    gap-3 items-center justify-center  h-3/4">
                              <a className=' rounded hover:shadow-xl shadow-gray-900  my-10 w-64 h-44 m-2' href={slide.link} target="_blank" rel="noopener noreferrer">
                                 {slide.icon}
-                                <h1 className='m-2'>Book Name</h1>
+                                {/* <h1 className='m-2'>Book Name</h1> */}
                             </a>
                         </div>
                     </div>

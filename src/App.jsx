@@ -3,9 +3,9 @@ import Navbar from './Components/navbar'
 import AllRouters from './Routers'
 import Footer from './Components/footer'
 import NavbarAdmin from './Admin/Components/NavbarAdmin'
-const App = () => {
 
-     
+const App = () => {
+ 
 
    
   return (

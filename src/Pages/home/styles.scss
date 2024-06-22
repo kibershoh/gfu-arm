@@ -1,5 +1,11 @@
 .custom_gradient {
-  font-family: 'Electrolize', sans-serif;
-  background: -webkit-linear-gradient(rgb(234, 232, 236), rgba(248, 248, 249, 0) 0%),
-              -webkit-linear-gradient(-50deg, rgba(255, 255, 255, 0.9) 70%, rgb(135, 115, 247) 0%);
+  width: 100%;
+   margin: auto;
+   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../assets/lib.jpg) center/cover no-repeat fixed;
+   background-size: cover;
+   height: 90vh;
+   display: flex; 
+   align-items: center;
+   justify-content: center;
+  
 }

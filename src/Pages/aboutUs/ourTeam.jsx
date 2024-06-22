@@ -1,3 +1,7 @@
+
+
+
+
 import React from 'react'
 import feruza from '../../assets/person/feruza.png';
 import shahzoda from '../../assets/person/shahzoda.png';
