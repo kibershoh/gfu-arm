@@ -47,8 +47,11 @@ const Home = () => {
         
       
       <SliderDesign2/>
+
       {/* <h1 className='text-3xl font-semibold pl-20'>Yangiliklar</h1> */}
+     
       <News/>
+
       <br />
       <br />
       <br />
