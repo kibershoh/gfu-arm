@@ -47,7 +47,7 @@ const navigate = useNavigate()
   
   return (
     <div className="flex flex-col items-center">
-      <div className="grid grid-cols-3 max-md:grid-cols-1 max-md:px-2 px-20 gap-10 max-xl:px-100 max-xl:grid-cols-4">
+      <div className="grid grid-cols-3 max-md:grid-cols-1 max-md:px-2 px-20 gap-10 max-xl:px-100 max-xl:grid-cols-4 2xl:w-3/4">
         {getCurrentCards()?.map((card,index) => (
           <BookCard book={card}/>
         ))}
