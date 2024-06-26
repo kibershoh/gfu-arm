@@ -71,13 +71,13 @@ const BookCard = ({ book }) => {
       <motion.div
         initial={{ opacity: 0, y: 150 }}
         whileInView={{ opacity: 1, x: 0, y: 0, transition: { duration: 0.9 } }}
-        className="shadow rounded mx-2 pb-10"
+        className="xl:shadow-xl shadow rounded-md mx-2 pb-10 border border-violet-200"
       >
         <div className="flex flex-col max-lg:flex-cols relative">
-          <div className="w-full bg-violet-50 p-2">
+          <div className="w-full bg-white-50 p-2">
             <img
               src={book.image}
-              className="grid w-2/4 rounded-md grid-cols-1 h-56 mx-auto max-md:w-32 max-md:h-32 duration-500 object-cover hover:scale-105 transform origin-bottom"
+              className="grid w-2/4 rounded-md grid-cols-1 h-44 mx-auto max-md:w-32 max-md:h-32 duration-500 object-cover hover:scale-105 transform origin-bottom"
             />
           </div>
           <div className="p-5 pb-10 max-md:pl-2 max-md:pr-0 pt-0 w-full relative">

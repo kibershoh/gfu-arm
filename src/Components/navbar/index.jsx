@@ -85,7 +85,7 @@ const Navbar = () => {
       {/* Desktop */}
       <div
         className={clsx(
-          "flex justify-between items-center bg-white border-b p-1 max-w-full w-full fixed top-0 left-0",
+          "flex justify-between items-center  bg-white border-b p-1 max-w-full w-full fixed top-0 left-0 right-0 2xl:w-3/4 2xl:mx-auto ",
           scrolled ? "shadow-md" : " "
         )}
       >
