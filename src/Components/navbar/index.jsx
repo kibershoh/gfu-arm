@@ -97,7 +97,7 @@ const Navbar = () => {
 
             <img className="w-24 h-24" src={logotip} alt="" />
             <h1 className={clsx(
-              location.pathname === '/' ? "text-white  w-96 text-2xl font-medium" : " text-slate-950  w-96 text-2xl  font-medium"
+              location.pathname === '/' ? "text-white tracking-widest   text-2xl font-medium" : " text-slate-950  w-96 text-2xl  font-medium"
             )}>Geologiya fanlari universiteti </h1>
           </h1>
         </Link>
@@ -115,8 +115,8 @@ const Navbar = () => {
                   to={nav.path}
                   className={
                    active === nav.title
-                      ? "flex mx-4   text-md font-inter border-b-2 uppercase hover:text-blue-600 border-blue-800"
-                      : "flex mx-4 items-center text-md font-inter uppercase hover:text-blue-600"
+                      ? "flex mx-4 font-be-vietnam   text-md tracking-widest	 border-b-2 uppercase hover:text-blue-600 border-blue-800"
+                      : "flex mx-4 font-be-vietnam items-center text-md tracking-widest	 uppercase hover:text-blue-600"
                   }
                   onClick={() => {
                     setToggle(!toggle);

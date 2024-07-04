@@ -11,6 +11,8 @@ export default {
     extend: {
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
+        'be-vietnam': ['"Be Vietnam Pro"', 'sans-serif'],
+
       },
       animation: {
         'infinite-scroll': 'infinite-scroll 25s linear infinite',
