@@ -57,7 +57,7 @@ const BookCard = ({ book }) => {
               <div className="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b">
                 <button
                   onClick={closeModal}
-                  className="text-white bg-violet-700 hover:bg-violet-800 focus:ring-4 focus:outline-none focus:ring-violet-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                  className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
                 >
                   Ok
                 </button>
@@ -71,7 +71,7 @@ const BookCard = ({ book }) => {
       <motion.div
         initial={{ opacity: 0, y: 150 }}
         whileInView={{ opacity: 1, x: 0, y: 0, transition: { duration: 0.9 } }}
-        className="xl:shadow-xl shadow rounded-md mx-2 pb-10 border border-violet-200"
+        className="xl:shadow-xl shadow rounded-md mx-2 pb-10 border border-blue-200"
       >
         <div className="flex flex-col max-lg:flex-cols relative">
           <div className="w-full bg-white-50 p-2">
@@ -90,14 +90,14 @@ const BookCard = ({ book }) => {
             <ShowMoreText2 text={book.caption}/>
             <button
               onClick={openModal}
-              className="text-white absolute -bottom-5 z-20 bg-violet-700 hover:bg-violet-800 focus:ring-4 focus:outline-none focus:ring-violet-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+              className="text-white absolute -bottom-5 z-20 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
             >
               Read More
             </button>
             <div className="w-full text-right px-2 pt-8 absolute right-0 -bottom-8">
               <Link to={book.file} download target="_blank">
-                <button className="inline-flex gap-5 items-center px-3 py-2 max-md:py-1 text-md max-md:text-sm font-medium text-center border border-violet-600 rounded-md hover:bg-[#CAF4FF] focus:ring-4 focus:outline-none focus:ring-violet-300">
-                  <FaDownload className="text-violet-600" />
+                <button className="inline-flex gap-5 items-center px-3 py-2 max-md:py-1 text-md max-md:text-sm font-medium text-center border border-blue-600 rounded-md hover:bg-[#CAF4FF] focus:ring-4 focus:outline-none focus:ring-blue-300">
+                  <FaDownload className="text-blue-600" />
                 </button>
               </Link>
             </div>
