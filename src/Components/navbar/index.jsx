@@ -85,15 +85,20 @@ const Navbar = () => {
       {/* Desktop */}
       <div
         className={clsx(
-          "flex justify-between items-center  bg-white border-b p-1 max-w-full w-full fixed top-0 left-0 right-0 2xl:px-[15%] 2xl:mx-auto ",
-          scrolled ? "shadow-md" : " "
+          "flex justify-between items-center    p-1 pt-5 max-w-full w-full fixed top-0 left-0 right-0 2xl:px-[13%] 2xl:mx-auto ",
+          scrolled ? "shadow-md" : " ",
+          location.pathname==='/' ? 'bg-transparent text-white' : 'bg-white text-slate-950',
+         
+          
         )}
       >
         <Link to={"/"} className="block max-lg:hidden">
           <h1 className="text-2xl flex items-center gap-2 text-white max-xl:text-sm font-bold logotip pl-2">
 
             <img className="w-16 h-16" src={logotip} alt="" />
-            <h1 className="text-black w-80 text-lg font-inter">Geologiya fanlari universiteti <br /> online kutubxonasi</h1>
+            <h1 className={clsx(
+              location.pathname === '/' ? "text-white w-96 text-xl font-mono" : " text-slate-950 w-80 text-lg font-inter"
+            )}>Geologiya fanlari universiteti <br /> online kutubxonasi</h1>
           </h1>
         </Link>
 
@@ -110,8 +115,8 @@ const Navbar = () => {
                   to={nav.path}
                   className={
                    active === nav.title
-                      ? "flex mx-4 text-blue-800 text-lg font-semibold border-b-2 border-blue-800"
-                      : "flex mx-4 items-center text-lg font-semibold"
+                      ? "flex mx-4   text-lg font-semibold border-b-2 hover:text-blue-600 border-blue-800"
+                      : "flex mx-4 items-center text-lg font-semibold hover:text-blue-600"
                   }
                   onClick={() => {
                     setToggle(!toggle);
@@ -133,8 +138,8 @@ const Navbar = () => {
           </div>
           <div>
             <select className="outline-none p-1 text-dark font-semibold text-sm border-2 border-blue-600  rounded-lg  bg-transparent	" >
-              <option value="en" className="text-md text-black  bg-transparent  font-semibold mb-10 outline-none" style={{ height: '30px' }}>ENG</option>
-              <option value="uz" className="text-md text-black  bg-transparent  font-semibold mb-10 outline-none">UZB</option>
+              <option value="en" className="text-md text-white  bg-transparent  font-semibold mb-10 outline-none" style={{ height: '30px' }}>ENG</option>
+              <option value="uz" className="text-md text-white  bg-transparent  font-semibold mb-10 outline-none">UZB</option>
             </select>
           </div>
 
