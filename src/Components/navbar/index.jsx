@@ -95,10 +95,10 @@ const Navbar = () => {
         <Link to={"/"} className="block max-lg:hidden">
           <h1 className="text-2xl flex items-center gap-2 text-white max-xl:text-sm font-bold logotip pl-2">
 
-            <img className="w-16 h-16" src={logotip} alt="" />
+            <img className="w-24 h-24" src={logotip} alt="" />
             <h1 className={clsx(
-              location.pathname === '/' ? "text-white w-96 text-xl font-mono" : " text-slate-950 w-80 text-lg font-inter"
-            )}>Geologiya fanlari universiteti <br /> online kutubxonasi</h1>
+              location.pathname === '/' ? "text-white  w-96 text-2xl font-medium" : " text-slate-950  w-96 text-2xl  font-medium"
+            )}>Geologiya fanlari universiteti </h1>
           </h1>
         </Link>
 
@@ -115,8 +115,8 @@ const Navbar = () => {
                   to={nav.path}
                   className={
                    active === nav.title
-                      ? "flex mx-4   text-lg font-semibold border-b-2 hover:text-blue-600 border-blue-800"
-                      : "flex mx-4 items-center text-lg font-semibold hover:text-blue-600"
+                      ? "flex mx-4   text-md font-inter border-b-2 uppercase hover:text-blue-600 border-blue-800"
+                      : "flex mx-4 items-center text-md font-inter uppercase hover:text-blue-600"
                   }
                   onClick={() => {
                     setToggle(!toggle);
