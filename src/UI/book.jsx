@@ -71,7 +71,7 @@ const BookCard = ({ book }) => {
       <motion.div
         initial={{ opacity: 0, y: 150 }}
         whileInView={{ opacity: 1, x: 0, y: 0, transition: { duration: 0.9 } }}
-        className="xl:shadow-xl shadow rounded-md mx-2 pb-10 border border-blue-200"
+        className=" shadow rounded-md mx-2 pb-10 border max-xl:border-2 border-blue-200 xl:shadow-2xl"
       >
         <div className="flex flex-col max-lg:flex-cols relative">
           <div className="w-full bg-white-50 p-2">

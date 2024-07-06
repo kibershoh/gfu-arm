@@ -34,7 +34,7 @@ const toDetails = (id) => {
     <div className="flex flex-col items-center mt-10">
       <div className="grid grid-cols-3 max-md:grid-cols-1 max-md:px-2 px-20 gap-5 gap-y-4 max-xl:px-100 max-xl:grid-cols-4 2xl:w-3/4">
         {getCurrentCards()?.map((card,index) => (
-           <div key={card.id} className='p-4  shadow rounded relative pb-16'>
+           <div key={card.id} className='p-4   shadow-xl border-2   rounded relative pb-16'>
                   <div className="" onClick={() => toDetails(card.id)}>
               {card?.fotos && card.fotos.length > 0 && card.fotos[0]?.fotos ? (
                 <img

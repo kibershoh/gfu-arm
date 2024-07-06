@@ -18,7 +18,7 @@ const Books = () => {
    
   return (
     <div>
-      <div id='books' className='books mt-20 rounded-md max-lg:mt-10 px-10 max-md:px-3'>
+      <div id='books' className='books   rounded-md max-lg:mt-10 px-10 max-md:px-3'>
 
         <form className='w-1/2 max-md:w-full'>
 

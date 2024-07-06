@@ -7,22 +7,7 @@ import clsx from 'clsx';
 const CarouselBooks = ({cards}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 const navigate = useNavigate()
-//   const cards = [
-//     { id: 1, content: 'Card 1' },
-//     { id: 2, content: 'Card 2' },
-//     { id: 3, content: 'Card 3' },
-//     { id: 4, content: 'Card 4' },
-//     { id: 5, content: 'Card 5' },
-//     { id: 6, content: 'Card 6' },
-//     { id: 7, content: 'Card 7' },
-//     { id: 8, content: 'Card 8' },
-//     { id: 9, content: 'Card 9' },
-//     { id: 10, content: 'Card 9' },
-//     { id: 11, content: 'Card 9' },
-//     { id: 12, content: 'Card 9' },
-//     { id: 13, content: 'Card 9' },
-//     { id: 14, content: 'Card 9' },
-//   ];
+ 
 
   const cardsPerPage = 6;
   const totalPages = Math.ceil(cards.length / cardsPerPage);
@@ -55,7 +40,7 @@ const navigate = useNavigate()
       <div className="flex items-center space-x-4 mt-4">
         {
           Array.from({ length: totalPages }).length > 1 &&
-        <button onClick={prevPage} className="p-2 bg-violet-600 hover:bg-violet-700 text-white rounded">Prev</button>
+        <button onClick={prevPage} className="p-2 bg-blue-600 hover:bg-blue-700 text-white rounded">Prev</button>
         }
         <div className="flex space-x-2">
           {Array.from({ length: totalPages }).map((_, index) => (
@@ -63,7 +48,7 @@ const navigate = useNavigate()
               key={index}
               onClick={() => goToPage(index)}
               className={clsx(
-                `p-2 rounded  ${index === currentIndex ? 'bg-violet-600 hover:bg-violet-700 text-white' : 'bg-gray-200 text-black'}`,
+                `p-2 rounded  ${index === currentIndex ? 'bg-blue-600 hover:bg-blue-700 text-white' : 'bg-gray-200 text-black'}`,
                 (Array.from({ length: totalPages }).length) < 2 && 'hidden'
                 
               )}
@@ -74,7 +59,7 @@ const navigate = useNavigate()
         </div>
         {
           Array.from({ length: totalPages }).length > 1 &&
-        <button onClick={nextPage} className="p-2 bg-violet-600 hover:bg-violet-700 text-white rounded">Next</button>
+        <button onClick={nextPage} className="p-2 bg-blue-600 hover:bg-blue-700 text-white rounded">Next</button>
           }
       </div>
     </div>

@@ -27,7 +27,7 @@ const BookListHome = () => {
       };
 
       fetchBooks();
-    });
+    },[]);
 
     // const [nextUrl, setNextUrl] = useState("https://librarygfu.pythonanywhere.com/en-us/books/book/");
     // const [previousUrl, setPreviousUrl] = useState(null);

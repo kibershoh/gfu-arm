@@ -5,7 +5,7 @@ import AboutLibrary from './aboutLibrary'
 import  './styles.scss'
 const AboutUs = () => {
   return (
-    <div className='my-20'>
+    <div className=''>
       <div className='aboutUs'>
 
       </div>

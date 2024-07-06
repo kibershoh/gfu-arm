@@ -50,8 +50,8 @@ const News = () => {
     navigate('/newsdetails/' + id)
   }
   return (
-    <div className='mt-20 '>
-      <div className='news'>
+    <div className='absolute top-0'>
+      <div className='news '>
     <h1 className='text-4xl font-semibold  text-white'>Yangiliklar</h1>
       </div>
      

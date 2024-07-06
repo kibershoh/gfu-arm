@@ -48,10 +48,10 @@ const Footer = () => {
                     <input type="text" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Ism va familiya" required />
                 </div>
 
-                <PhoneInput
+                {/* <PhoneInput
 defaultCountry='uz'                    
                     placeholder="Enter phone number"
-                />
+                /> */}
                  <button className='bg-violet-600 ml-auto rounded-lg p-2 text-white hover:bg-violet-700 mt-2 w-44 text-lg font-semibold'>Submit</button>
             </div>
             <div className="flex items-center max-md:justify-around mt-4">
