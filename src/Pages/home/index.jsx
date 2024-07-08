@@ -40,6 +40,9 @@ const Home = () => {
       <br />
       <h1 className="text-center text-4xl font-be-vietnam my-10 max-md:text-xl max-md:my-4">Eng qiziqarli 5 ta kitoblar </h1>
         <BookListHome/>
+                  
+           <h1 className="text-center text-4xl font-be-vietnam my-5 max-md:text-xl max-md:my-4">Yangiliklar </h1>
+        
         <ForHome/>
     </div>
   )

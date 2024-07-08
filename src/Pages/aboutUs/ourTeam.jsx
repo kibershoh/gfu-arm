@@ -10,7 +10,7 @@ import zebiniso from '../../assets/person/zebiniso.png';
 const OurTeam = () => {
   return (
     <div>
-         <div>
+         <div className='mt-10'>
                         <div className="grid gap-8 lg:gap-16 px-20 sm:grid-cols-3 lg:grid-cols-3">
                         <div className="text-center text-gray-500 dark:text-gray-400 shadow-xl rounded pb-5">
                             <div className='w-full bg-violet-600 rounded-xl py-5 '>
