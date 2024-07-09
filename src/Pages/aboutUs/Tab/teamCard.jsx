@@ -67,13 +67,13 @@ const [showModal, setShowModal] = useState(false);
                             </div>
                              
                            <div className='h-44'>
-                             <h3 className="mb-1 text-xl mt-10 font-bold tracking-tight text-gray-900 dark:text-white">
+                             <h3 className="mb-1 h-16 text-xl mt-10 font-bold tracking-tight text-gray-900 dark:text-white">
                                 <a href="#">{item.name}</a>
                             </h3>
                            
                             <p>{item.degree}</p>
                            
-                            <button className='bg-violet-600 text-white p-2 rounded my-3 hover:bg-violet-700  hover:scale-110 duration-700'  onClick={openModal}>View More</button>
+                            <button className='bg-blue-600 text-white p-2 rounded my-3 hover:bg-blue-700  hover:scale-110 duration-700'  onClick={openModal}>View More</button>
                            </div>
                         </div>
     </div>
