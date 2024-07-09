@@ -16,13 +16,13 @@ const Home = () => {
   const { t, language, setLanguage } = useContext(LanguageContext);
   return (
     <div>
-       <div className=' custom_gradient w-full pt-20 z-1  h-screen  max-md:pb-10  flex justify-between max-lg:flex-col max-md:justify-center items-center   px-64   max-md:gap-8   max-md:px-[10%] mb-10 relative'>
+       <div className='custom_gradient w-full pt-20 z-1  h-screen  max-md:pb-10  flex justify-between max-lg:flex-col max-md:justify-center items-center   px-64   max-md:gap-8   max-md:px-[10%] mb-10 relative'>
            
             <div className='flex flex-col items-start w-full'>
           <h1 className='text-5xl text-white  font-semibold mb-4 w-full max-md:text-3xl max-md:mb-1'>{t('type')}</h1>
           <h1 className='text-3xl  font-inter mt-10 border-l-4 border-blue-700 pl-5  text-white max-md:text-xl max-md:mt-4'>
            
- {t('univercity')}
+          {t('univercity')}
                   </h1>
            
               <div className='grid grid-cols-2  max-md:grid max-md:grid-cols-2 gap-5 mt-10 w-1/2 max-md:w-full max-md:gap-7'>
@@ -45,7 +45,7 @@ const Home = () => {
       <h1 className="text-center text-4xl font-be-vietnam my-10 max-md:text-xl max-md:my-4">{t('booksName')} </h1>
         <BookListHome/>
                   
-           <h1 className="text-center text-4xl font-be-vietnam my-5 max-md:text-xl max-md:my-4">Yangiliklar </h1>
+           <h1 className="text-center text-4xl font-be-vietnam my-5 max-md:text-xl max-md:my-4">{t('news')} </h1>
         
         <ForHome/>
     </div>

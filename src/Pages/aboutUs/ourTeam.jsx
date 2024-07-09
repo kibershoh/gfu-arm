@@ -2,13 +2,16 @@
 
 
 
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import feruza from '../../assets/person/feruza.png';
 import shahzoda from '../../assets/person/shahzoda.png';
 import shoxsanam from '../../assets/person/shoxsanam.png';
 import zebiniso from '../../assets/person/zebiniso.png';
 import TeamCard from './Tab/teamCard';
+import { LanguageContext } from '../../context/LanguageContext';
 const OurTeam = () => {
+    const { t, language, setLanguage } = useContext(LanguageContext);
+
   
    const TeamInformation = [
     {
@@ -66,6 +69,7 @@ const OurTeam = () => {
     <div>
      
          <div className='mt-10 px-10 2xl:w-3/4 2xl:px-3 2xl:mx-auto'>
+                      <h1 className='text-center my-10 text-3xl font-be-vietnam'>{t('team')}</h1>
                         <div className="grid gap-4 lg:gap-5 px-10 sm:grid-cols-3 lg:grid-cols-3">
                        
                        {

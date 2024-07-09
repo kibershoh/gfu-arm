@@ -35,6 +35,7 @@ export const translations = {
    readMore:"Read More",
    news:"News",
    login:"Login",
+   team:"Our Team",
 
       
   },
@@ -76,6 +77,7 @@ export const translations = {
         readMore:"O'qish",
         news:"Yangiliklar",
         login:"Kirish",
+        team:"Xodimlar",
       
      
     
