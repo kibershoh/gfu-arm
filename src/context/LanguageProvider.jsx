@@ -3,7 +3,7 @@ import { translations } from '../Constants/Translations'
 import { LanguageContext } from './LanguageContext'
 
 const LanguageProvider = ({children}) => {
-    const [language,setLanguage] = useState('en')
+    const [language,setLanguage] = useState('uz')
 
     const t = key =>{
         return translations[language][key] || key
