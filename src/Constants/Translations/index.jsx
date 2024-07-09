@@ -24,6 +24,7 @@ export const translations = {
       },
     
     ],
+    logo:"University of Geological Sciences",
     type:"Online library",
 
     univercity: "University of Geological Sciences web page of the information resource center",
@@ -32,6 +33,8 @@ export const translations = {
     linksName:"Useful links",
    booksName:"The 5 most interesting books",
    readMore:"Read More",
+   news:"News",
+   login:"Login",
 
       
   },
@@ -59,10 +62,11 @@ export const translations = {
       {
         id: 'about',
         title: "Biz haqimizda",
-        path: '/news',
+        path: '/about',
       },
 
     ],
+    logo:'Geologiya fanlari universiteti',
     type:"Elektron kutubxona",
     univercity: `Geologiya fanlari universiteti  axborot-resurs markazining veb-sahifasi`,
  button1: "Kitoblar",
@@ -70,6 +74,8 @@ export const translations = {
         linksName:"Foydali havolalar",
         booksName:"Eng qiziqarli 5 ta kitoblar",
         readMore:"O'qish",
+        news:"Yangiliklar",
+        login:"Kirish",
       
      
     

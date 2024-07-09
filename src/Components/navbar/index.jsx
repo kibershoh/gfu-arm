@@ -87,7 +87,7 @@ const Navbar = () => {
       {/* Desktop */}
       <div
         className={clsx(
-          "flex justify-between items-center bg-transparent text-white   p-1 pt-5 max-w-full w-full  absolute z-30 top-0 left-0 right-0 2xl:px-[13%] 2xl:mx-auto px-10 max-md:px-4 ",
+          "flex justify-between items-center bg-transparent text-white   p-1 pt-5 max-w-full w-full  absolute z-30 top-0 left-0 right-0 2xl:px-[10%] 2xl:mx-auto px-10 max-md:px-4 ",
           
          
           
@@ -100,7 +100,7 @@ const Navbar = () => {
             <h1 className={clsx(
               "text-white tracking-wide uppercase   text-lg font-medium",
               // location.pathname === '/' ? "" : " text-slate-950  w-96 text-2xl  font-medium"
-            )}>Geologiya fanlari universiteti </h1>
+            )}>{t('logo')} </h1>
           </h1>
         </Link>
 
@@ -136,7 +136,7 @@ const Navbar = () => {
 
         <div className="flex items-center">
           <div className="mr-3 ">
-            <Link to={'/login'} className="text-lg  bg-blue-600 hover:bg-blue-600 p-1 px-2 rounded text-white uppercase">Login</Link>
+            <Link to={'/login'} className="text-lg  bg-blue-600 hover:bg-blue-600 p-1 px-2 rounded text-white uppercase">{t('login')}</Link>
           </div>
           <div>
            <select className="outline-none dark:text-white p-1 text-white font-semibold text-lg border-2 border-blue-600	 rounded-lg  bg-transparent	" value={language} onChange={handleLanguageChange}>

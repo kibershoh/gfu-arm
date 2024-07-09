@@ -3,7 +3,7 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
  import one from '../../../assets/education/1.jpg';
   import two from '../../../assets/education/2.jpg';
-  import prezident from '../../../assets/education/geologiyakutubxona.png';
+//   import prezident from '../../../assets/education/geologiyakutubxona.png';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -15,7 +15,7 @@ import './styles.scss';
 import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 import TestZoom from '../imageZoom';
 
-export default function AutoComplate() {
+export default function AutoComplate({images}) {
   return (
     <>
       <Swiper
@@ -31,14 +31,15 @@ export default function AutoComplate() {
         modules={[  Navigation, Autoplay]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <img className='2xl:w-80  2xl:h-96 w-64 h-64 rounded-xl' src={prezident} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img className='2xl:w-80  2xl:h-96 w-64 h-64 rounded-xl' src={two} alt="" />
 
-
+        {
+            images.map((image)=>(
+                <SwiperSlide key={image.id}>
+          <img className='2xl:w-80  2xl:h-96 w-64 h-96 rounded-xl' src={image.img} alt="" />
         </SwiperSlide>
+            ))
+        }
+      
        
       </Swiper>
     </>

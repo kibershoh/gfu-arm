@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import CardLoader from '../../Components/cardLoader';
 import SliderImages from './sliderImages';
@@ -7,6 +7,7 @@ import ImageSlider from './sliderImages';
 import Carousel from './NewsCarousel';
 // import Modal from './Modal';
 import   './styles.scss'
+import { LanguageContext } from '../../context/LanguageContext';
 
 const API_URL = 'https://librarygfu.pythonanywhere.com/en-us/books/book/';
 
@@ -20,7 +21,8 @@ export const getBooks = async () => {
 };
 const News = () => {
   const navigate = useNavigate()
- 
+   const { t, language, setLanguage } = useContext(LanguageContext);
+
  
   const [news, setNews] = useState([]);
   useEffect(() => {
@@ -52,7 +54,7 @@ const News = () => {
   return (
     <div className='absolute top-0'>
       <div className='news '>
-    <h1 className='text-4xl font-semibold  text-white'>Yangiliklar</h1>
+    <h1 className='text-4xl font-semibold  text-white'>{t('news')}</h1>
       </div>
      
                            <Carousel cards={news}/>
