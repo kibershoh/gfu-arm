@@ -2,61 +2,78 @@
 
 
 
-import React from 'react'
+import React, { useState } from 'react'
 import feruza from '../../assets/person/feruza.png';
 import shahzoda from '../../assets/person/shahzoda.png';
 import shoxsanam from '../../assets/person/shoxsanam.png';
 import zebiniso from '../../assets/person/zebiniso.png';
+import TeamCard from './Tab/teamCard';
 const OurTeam = () => {
+  
+   const TeamInformation = [
+    {
+      id:1,
+      img:shoxsanam,
+      name:"Shodmanova Shohsanam Abduxamitovna",
+      degree:"1-toifali kutubxonachi",
+      about:"Shodmanova Shohsanam AbduxamitovnaShodmanova Shohsanam AbduxamitovnaShodmanova Shohsanam Abduxamitovna "
+    },
+    {
+      id:2,
+      img:shoxsanam,
+      name:"Abduganiyeva Zebiniso Melikovna",
+      degree:"1-toifali kutubxonachi",
+      about:"Shodmanova Shohsanam AbduxamitovnaShodmanova Shohsanam AbduxamitovnaShodmanova Shohsanam Abduxamitovna "
+    },
+    {
+      id:3,
+      img:shoxsanam,
+      name:"Tuxtayeva Feruza Tulkunovna",
+      degree:"2-toifali kutubxonachi",
+      about:"Tuxtayeva Feruza Tulkunovna Tuxtayeva Feruza TulkunovnaTuxtayeva Feruza TulkunovnaTuxtayeva Feruza Tulkunovna"
+    },
+    {
+      id:3,
+      img:shoxsanam,
+      name:"Tuxtayeva Feruza Tulkunovna",
+      degree:"2-toifali kutubxonachi",
+      about:"Tuxtayeva Feruza Tulkunovna Tuxtayeva Feruza TulkunovnaTuxtayeva Feruza TulkunovnaTuxtayeva Feruza Tulkunovna"
+    },
+    {
+      id:3,
+      img:shoxsanam,
+      name:"Tuxtayeva Feruza Tulkunovna",
+      degree:"2-toifali kutubxonachi",
+      about:"Tuxtayeva Feruza Tulkunovna Tuxtayeva Feruza TulkunovnaTuxtayeva Feruza TulkunovnaTuxtayeva Feruza Tulkunovna"
+    },
+    {
+      id:3,
+      img:shoxsanam,
+      name:"Tuxtayeva Feruza Tulkunovna",
+      degree:"2-toifali kutubxonachi",
+      about:"Tuxtayeva Feruza Tulkunovna Tuxtayeva Feruza TulkunovnaTuxtayeva Feruza TulkunovnaTuxtayeva Feruza Tulkunovna"
+    },
+    {
+      id:3,
+      img:shoxsanam,
+      name:"Tuxtayeva Feruza Tulkunovna",
+      degree:"2-toifali kutubxonachi",
+      about:"Tuxtayeva Feruza Tulkunovna Tuxtayeva Feruza TulkunovnaTuxtayeva Feruza TulkunovnaTuxtayeva Feruza Tulkunovna"
+    },
+   ]
+ 
   return (
     <div>
-         <div className='mt-10'>
-                        <div className="grid gap-8 lg:gap-16 px-20 sm:grid-cols-3 lg:grid-cols-3">
-                        <div className="text-center text-gray-500 dark:text-gray-400 shadow-xl rounded pb-5">
-                            <div className='w-full bg-violet-600 rounded-xl py-5 '>
-                            <img className="mx-auto border-2 border-white mb-4 w-48 h-48 rounded-full" src={shoxsanam} alt="Bonnie Avatar" />
-
-                            </div>
-                             
-                            <h3 className="mb-1 text-xl mt-10 font-bold tracking-tight text-gray-900 dark:text-white">
-                                <a href="#">Shodmanova Shohsanam Abduxamitovna</a>
-                            </h3>
-                           
-                            <p>1-toifali kutubxonachi</p>
-                           
-                            <button className='bg-violet-600 text-white p-2 rounded my-3 hover:bg-violet-700  hover:scale-110 duration-700'>View More</button>
-                           {/* <SocialNetwork/> */}
-                        </div>
-                        <div className="text-center shadow-xl rounded text-gray-500 dark:text-gray-400">
-                           
-                           <div className='w-full bg-violet-600 rounded-xl py-5'>
-                            <img className="mx-auto mb-4 w-48 h-48 rounded-full" src={zebiniso} alt="Helene Avatar" />
-
-                           </div>
-                            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                <a href="#">Abduganiyeva Zebiniso Melikovna</a>
-                            </h3>
-                           
-                            <p>1-toifali kutubxonachi</p>
-                                                       <button className='bg-violet-600 text-white p-2 rounded my-3 hover:bg-violet-700  hover:scale-110 duration-700'>View More</button>
-                           
-                             
-                        </div>
-                        <div className="text-gray-500 shadow-lg text-center dark:text-gray-400">
-                           
-                           <div className='w-full bg-violet-600 rounded-xl py-5'>
-                            <img className="mx-auto mb-4 w-48 h-48 rounded-full" src={feruza} alt="Jese Avatar" />
-
-                           </div>
-                            <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                <a href="#">Tuxtayeva Feruza Tulkunovna</a>
-                            </h3>
-                           
-                            <p>1-toifali kutubxonachi</p>
-                                                       <button className='bg-violet-600 text-white p-2 rounded my-3 hover:bg-violet-700  hover:scale-110 duration-700'>View More</button>
-                           
-                            
-                         </div>
+     
+         <div className='mt-10 px-10 2xl:w-3/4 2xl:px-3 2xl:mx-auto'>
+                        <div className="grid gap-4 lg:gap-5 px-10 sm:grid-cols-3 lg:grid-cols-3">
+                       
+                       {
+                        TeamInformation.map((item)=>(
+                           <TeamCard item={item}/>
+                        ))
+                       }
+                       
                       
                         
                       

@@ -11,7 +11,9 @@ import logotip from '../../assets/logotip.png'
 import { navLinks2 } from "../../Constants/navbar_items";
 import { useScroll } from "../../Constants/useScroll";
 import './styles.scss'
+import { LanguageContext } from "../../context/LanguageContext";
 const Navbar = () => {
+  const { t, language, setLanguage } = useContext(LanguageContext);
 
 
   const [sidebar, setSidebar] = useState(false);
@@ -109,7 +111,7 @@ const Navbar = () => {
         </Link>
         <div className="hidden lg:block  items-center">
           <ul className="flex">
-            {navLinks2.map((nav) => (
+            {t('navLinks').map((nav) => (
               <li key={nav.id} className="text-dark w-auto">
                 <NavLink
                   to={nav.path}
@@ -137,9 +139,9 @@ const Navbar = () => {
             <Link to={'/login'} className="text-lg  bg-blue-600 hover:bg-blue-600 p-1 px-2 rounded text-white uppercase">Login</Link>
           </div>
           <div>
-            <select className="outline-none p-1 text-dark font-semibold text-sm border-2 border-blue-600  rounded-lg  bg-transparent	" >
-              <option value="en" className="text-md text-slate-950  bg-transparent  font-semibold mb-10 outline-none" style={{ height: '30px' }}>ENG</option>
-              <option value="uz" className="text-md text-slate-950  bg-transparent  font-semibold mb-10 outline-none">UZB</option>
+           <select className="outline-none dark:text-white p-1 text-black font-semibold text-lg border-2 border-blue-600	 rounded-lg  bg-transparent	" value={language} onChange={handleLanguageChange}>
+              <option value="en" className="text-md text-black  bg-transparent  font-semibold mb-10 outline-none" style={{ height: '30px' }}>ENG</option>
+              <option value="uz" className="text-md text-black  bg-transparent  font-semibold mb-10 outline-none">UZB</option>
             </select>
           </div>
 
