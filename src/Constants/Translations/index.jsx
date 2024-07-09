@@ -57,7 +57,7 @@ export const translations = {
       },
       {
         id: 'yangiliklar',
-        title: "yangiliklar",
+        title: "Yangiliklar",
         path: '/news',
       },
       {

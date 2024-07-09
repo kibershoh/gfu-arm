@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { categories, navLinks2 } from '../../Constants/navbar_items';
 import { BsLinkedin, BsGithub, BsInstagram, BsTelegram, BsTwitter } from 'react-icons/bs'
@@ -10,7 +10,10 @@ import 'react-international-phone/style.css';
 import { MdAlternateEmail, MdCopyright, MdLocationPin } from 'react-icons/md';
 import { FaPhone, FaPhoneVolume } from 'react-icons/fa';
 import logo from '../../assets/logotip.png';
+import { LanguageContext } from '../../context/LanguageContext';
 const Footer = () => {
+  const { t, language, setLanguage } = useContext(LanguageContext);
+
     const [active, setActive] = useState("");
     const [toggle, setToggle] = useState(false);
     return (
@@ -24,7 +27,7 @@ const Footer = () => {
             <div className='flex flex-col'>
 
                 <ul className='flex'>
-                    {navLinks2.map((nav) => (
+                    {t('navLinks').map((nav) => (
                         <li key={nav.id} className="flex  hover:scale-105 duration-1000 my-2">
                             <NavLink   
                                 to={nav.path}
