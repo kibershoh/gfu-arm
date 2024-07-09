@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { FaDownload } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import ShowMoreText2 from './showMoreText2';
+import { LanguageContext } from '../context/LanguageContext';
  
 const BookCard = ({ book }) => {
   const [showModal, setShowModal] = useState(false);
+  const { t, language, setLanguage } = useContext(LanguageContext);
 
   const openModal = () => {
     setShowModal(true);
@@ -92,7 +94,7 @@ const BookCard = ({ book }) => {
               onClick={openModal}
               className="text-white absolute -bottom-5 z-20 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
             >
-              Read More
+              {t('readMore')}
             </button>
             <div className="w-full text-right px-2 pt-8 absolute right-0 -bottom-8">
               <Link to={book.file} download target="_blank">

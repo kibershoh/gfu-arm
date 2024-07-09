@@ -1,10 +1,12 @@
 // src/newsHome.js
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { LanguageContext } from '../../../context/LanguageContext';
 
 const NewsHome = ({cards}) => {
 const navigate = useNavigate()
- 
+   const { t, language, setLanguage } = useContext(LanguageContext);
+
  
 const toDetails = (id) => {
     navigate('/newsdetails/' + id)
@@ -37,7 +39,7 @@ const toDetails = (id) => {
                   <div className='absolute bottom-5 right-5    '>
                      
                      <a href='#newsDetails' onClick={()=> toDetails(card.id)} className='p-2 rounded-md bg-blue-600 hover:bg-blue-700 text-white '>
-                      Read More
+                      {t('readMore')}
                     </a>
                    </div>
                 </div>
