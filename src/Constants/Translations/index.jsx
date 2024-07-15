@@ -36,6 +36,7 @@ export const translations = {
    news:"News",
    login:"Login",
    team:"Our Team",
+   allBooks:"All Books"
 
       
   },
@@ -78,7 +79,8 @@ export const translations = {
         news:"Yangiliklar",
         login:"Kirish",
         team:"Xodimlar",
-      
+        allBooks:"Kitoblar  "
+
      
     
   }

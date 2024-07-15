@@ -34,22 +34,7 @@ const Books = () => {
           </div>
         </form>
       </div>
-      <div classname="w-full my-10">
-
-        <div id='booksId' className="my-10 2xl:w-7/12 2xl:mx-auto flex justify-between gap-10 max-md:gap-2 mx-20 max-lg:mx-5 max-lg:my-4">
-          <h1 className='text-3xl font-semibold max-lg:text-2xl max-md:text-xl '>All Books</h1>
-          <select id="large" className="block px-4 outline-none py-3 max-md:py-1 max-md:px-2 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-violet-500 focus:border-violet-500 ">
-            <option selected>Choose a category</option>
-            <option value="US">Fantasy</option>
-            <option value="CA">Literature</option>
-            <option value="FR">Psychology</option>
-            <option value="DE">Thriller</option>
-          </select>
-        </div>
-
-
-      </div>
-
+       
 
 
       {/* Books */}

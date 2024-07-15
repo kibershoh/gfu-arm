@@ -52,9 +52,10 @@ const BookListHome = () => {
     };
 
      console.log(data);
- const firstFiveBooks = data.slice(0, 5);
+ const firstFiveBooks = data.slice(-5);
     return (
         <div>
+          
             {
                 !loading ?
                     <div id='bookList' className=' max-xl:grid-cols-2 max-md:grid-cols-1  px-5 max-md:px-1'>

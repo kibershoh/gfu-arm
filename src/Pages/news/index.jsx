@@ -52,12 +52,14 @@ const News = () => {
     navigate('/newsdetails/' + id)
   }
   return (
-    <div className='absolute top-0'>
+    <div className='relative'>
+      <div className='top-0'>
       <div className='news '>
     <h1 className='text-4xl font-semibold  text-white'>{t('news')}</h1>
       </div>
      
                            <Carousel cards={news}/>
+    </div>
     </div>
   )
 }
