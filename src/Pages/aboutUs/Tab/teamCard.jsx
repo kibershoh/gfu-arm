@@ -43,7 +43,7 @@ const [showModal, setShowModal] = useState(false);
               </div>
               <div className="p-4 md:p-5 space-y-4">
                 <p className="text-base leading-relaxed text-gray-500">
-                {item.about}
+                {/* {item.about} */}
                 </p>
                 
               </div>
@@ -60,20 +60,20 @@ const [showModal, setShowModal] = useState(false);
           </div>
         </div>
       )}
-        <div key={item.id} className="text-center text-gray-500 dark:text-gray-400 border-2 shadow-2xl rounded pb-5">
+        <div key={item.id} className="text-center text-gray-500 dark:text-gray-400 border-2 shadow-2xl rounded pb-1">
                             <div className='w-full bg-white rounded-xl py-5 shadow-sm '>
-                            <img className="mx-auto border-2 border-white mb-4 w-48 h-48 rounded-xl" src={item.img} alt="Bonnie Avatar" />
+                            <img className="mx-auto border-2 border-white mb-4 w-52 h-48 rounded-xl" src={`https://librarygfu.pythonanywhere.com/${item.avatar}`} alt="Bonnie Avatar" />
 
                             </div>
                              
-                           <div className='h-44'>
-                             <h3 className="mb-1 h-16 text-xl mt-10 font-bold tracking-tight text-gray-900 dark:text-white">
+                           <div className='h-36 mt-10'>
+                             <h3 className="mb-1 h-8 text-xl mt-10 font-bold tracking-tight text-gray-900 dark:text-white">
                                 <a href="#">{item.name}</a>
                             </h3>
                            
-                            <p>{item.degree}</p>
+                            <p className='text-lg'>{item.position}</p>
                            
-                            <button className='bg-blue-600 text-white p-2 rounded my-3 hover:bg-blue-700  hover:scale-110 duration-700'  onClick={openModal}>View More</button>
+                            {/* <button className='bg-blue-600 text-white p-2 rounded my-3 hover:bg-blue-700  hover:scale-110 duration-700'  onClick={openModal}>View More</button> */}
                            </div>
                         </div>
     </div>

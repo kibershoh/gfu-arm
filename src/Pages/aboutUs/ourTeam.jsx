@@ -2,16 +2,38 @@
 
 
 
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import feruza from '../../assets/person/feruza.png';
 import shahzoda from '../../assets/person/shahzoda.png';
 import shoxsanam from '../../assets/person/shoxsanam.png';
 import zebiniso from '../../assets/person/zebiniso.png';
 import TeamCard from './Tab/teamCard';
 import { LanguageContext } from '../../context/LanguageContext';
+import { useNavigate } from 'react-router-dom';
 const OurTeam = () => {
     const { t, language, setLanguage } = useContext(LanguageContext);
+const [data, setData] = useState([])
+    const navigate = useNavigate()
+    useEffect(() => {
+      const requestOptions = {
+        method: "GET",
+        redirect: "follow"
+      };
 
+      const fetchBooks = async () => {
+        try {
+          const response = await fetch("https://librarygfu.pythonanywhere.com/en-us/library/employee/", requestOptions);
+          const textResult = await response.json();
+          console.log(textResult);
+          setData(textResult);
+        } catch (err) {
+          setError(err);
+          console.error(err);
+        }
+      };
+
+      fetchBooks();
+    },[]);
   
    const TeamInformation = [
     {
@@ -73,7 +95,7 @@ const OurTeam = () => {
                         <div className="grid gap-4 lg:gap-5 px-10 sm:grid-cols-3 lg:grid-cols-3">
                        
                        {
-                        TeamInformation.map((item)=>(
+                        data?.map((item)=>(
                            <TeamCard item={item}/>
                         ))
                        }

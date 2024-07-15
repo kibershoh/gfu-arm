@@ -55,10 +55,10 @@ const Footer = () => {
                     <Link to="/" className="bg-transparent hover:bg-slate-200 border border-slate-800 mr-4  rounded-full p-2 text-slate-800">
                         <BsTwitter size={20} />
                     </Link>
-                    <Link to="/" className="bg-transparent hover:bg-slate-200 border border-slate-800 mr-4  rounded-full p-2 text-slate-800">
+                    <Link to="https://www.youtube.com/results?search_query=geologiya+fanlari+universiteti" className="bg-transparent hover:bg-slate-200 border border-slate-800 mr-4  rounded-full p-2 text-slate-800">
                         <IoLogoYoutube size={20} />
                     </Link>
-                    <Link to="/" className="bg-transparent hover:bg-slate-200 border border-slate-800 mr-4  rounded-full p-2 text-slate-800">
+                    <Link to="https://www.facebook.com/Geouniveruz" className="bg-transparent hover:bg-slate-200 border border-slate-800 mr-4  rounded-full p-2 text-slate-800">
                         <GrFacebookOption size={20} />
                     </Link>
                     <Link to="/" className=" flex  ml-10    gap-2 items-center text-lg hover:text-blue-700 p-1 text-slate-800">

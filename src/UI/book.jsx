@@ -76,10 +76,10 @@ const BookCard = ({ book }) => {
         className=" shadow rounded-md mx-2 pb-10 border max-xl:border-2 border-blue-200 xl:shadow-2xl"
       >
         <div className="flex flex-col max-lg:flex-cols relative">
-          <div className="w-full bg-white-50 p-2">
+          <div className="w-full bg-white-50 p-5  ">
             <img
               src={book.image}
-              className="grid w-2/4 rounded-md grid-cols-1 h-44 mx-auto max-md:w-32 max-md:h-32 duration-500 object-cover hover:scale-105 transform origin-bottom"
+              className="grid w-1/2 rounded-md grid-cols-1 h-44 mx-auto max-md:w-32 max-md:h-32 duration-500 object-cover hover:scale-105 transform origin-bottom"
             />
           </div>
           <div className="p-5 pb-10 max-md:pl-2 max-md:pr-0 pt-0 w-full relative">
