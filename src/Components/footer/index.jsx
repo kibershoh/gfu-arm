@@ -17,7 +17,7 @@ const Footer = () => {
     const [active, setActive] = useState("");
     const [toggle, setToggle] = useState(false);
     return (
-        <div className=' max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1  p-10 px-20 border-t-2 mt-3'>
+        <div className=' max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1  p-10 px-20 border-slate-500 border-t-2 max-xl:border-slate-500 mt-3'>
 
             {/* <div>
                 <h1 className='text-3xl text-slate-700 font-extrabold max-lg:text-2xl max-md:text-xl max-sm:text-lg'>GFU | ARM</h1>
