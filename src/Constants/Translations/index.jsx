@@ -38,8 +38,8 @@ export const translations = {
     team: "Our Team",
     allBooks: "All Books",
     tur: "There are no books for this type ",
-    chooseCategory:"Choose categories"
-
+    chooseCategory:"Choose categories",
+    search:"Search books..."
   },
 
 
@@ -82,8 +82,8 @@ export const translations = {
     team: "Xodimlar",
     allBooks: "Kitoblar  ",
     tur: "Bu tur boyicha kitoblar mavjud emas  ",
-chooseCategory:"Kategoriya tanlang"
-
+chooseCategory:"Kategoriya tanlang",
+  search:"Qidirish"
 
   }
 };
