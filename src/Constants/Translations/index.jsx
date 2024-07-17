@@ -39,7 +39,9 @@ export const translations = {
     allBooks: "All Books",
     tur: "There are no books for this type ",
     chooseCategory:"Choose categories",
-    search:"Search books..."
+    search:"Search books...",
+  oquv_zallari:"Study halls",
+
   },
 
 
@@ -83,7 +85,8 @@ export const translations = {
     allBooks: "Kitoblar  ",
     tur: "Bu tur boyicha kitoblar mavjud emas  ",
 chooseCategory:"Kategoriya tanlang",
-  search:"Qidirish"
+  search:"Qidirish",
+  oquv_zallari:"O'quv zallari",
 
   }
 };

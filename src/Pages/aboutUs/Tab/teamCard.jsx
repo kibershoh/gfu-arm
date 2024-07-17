@@ -13,7 +13,7 @@ const [showModal, setShowModal] = useState(false);
     <div>
           {showModal && (
         <div className="fixed inset-0 overflow-y-auto overflow-x-hidden flex justify-center items-center z-30 bg-gray-800 bg-opacity-50">
-          <div className="relative p-4 w-full max-w-2xl max-h-full">
+          <div className="relative p-2 w-full max-w-2xl max-h-full">
             <div className="relative bg-white rounded-lg shadow">
               <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
                 <h3 className="text-xl font-semibold text-gray-900">
@@ -60,14 +60,14 @@ const [showModal, setShowModal] = useState(false);
           </div>
         </div>
       )}
-        <div key={item.id} className="text-center text-gray-500 dark:text-gray-400 border-2 shadow-2xl rounded pb-1">
+        <div key={item.id} className="text-center my-1 text-gray-500 dark:text-gray-400 border-2 shadow-2xl rounded pb-1">
                             <div className='w-full bg-white rounded-xl py-5 shadow-sm '>
                             <img className="mx-auto border-2 border-white mb-4 w-52 h-48 rounded-xl" src={`https://librarygfu.pythonanywhere.com/${item.avatar}`} alt="Bonnie Avatar" />
 
                             </div>
                              
                            <div className='h-36 mt-10'>
-                             <h3 className="mb-1 h-8 text-xl mt-10 font-bold tracking-tight text-gray-900 dark:text-white">
+                             <h3 className="mb-1 max-md:mb-5 h-8 text-xl mt-10 font-bold tracking-tight text-gray-900 dark:text-white">
                                 <a href="#">{item.name}</a>
                             </h3>
                            

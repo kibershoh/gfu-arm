@@ -88,11 +88,11 @@ const [data, setData] = useState([])
    ]
  
   return (
-    <div>
+    <div id='ourTeam'>
      
-         <div className='mt-10 px-10 2xl:w-3/4 2xl:px-3 2xl:mx-auto'>
+         <div className='mt-10 px-10 2xl:w-3/4 2xl:px-3 2xl:mx-auto max-md:px-2'>
                       <h1 className='text-center my-10 text-3xl font-be-vietnam'>{t('team')}</h1>
-                        <div className="grid gap-4 lg:gap-5 px-10 sm:grid-cols-3 lg:grid-cols-3">
+                        <div classNacme=" gap-4 lg:gap-5 px-10 max-md:px-2 ">
                        
                        {
                         data?.map((item)=>(
