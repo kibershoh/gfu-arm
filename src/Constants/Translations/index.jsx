@@ -22,25 +22,26 @@ export const translations = {
         title: "About",
         path: '/about',
       },
-    
+
     ],
-    logo:"University of Geological Sciences",
-    type:"Online library",
+    logo: "University of Geological Sciences",
+    type: "Online library",
 
     univercity: "University of Geological Sciences web page of the information resource center",
     button1: "Books",
     button2: "Elektron Katalog",
-    linksName:"Useful links",
-   booksName:"The 5 most interesting books",
-   readMore:"Read More",
-   news:"News",
-   login:"Login",
-   team:"Our Team",
-   allBooks:"All Books"
+    linksName: "Useful links",
+    booksName: "The 5 most interesting books",
+    readMore: "Read More",
+    news: "News",
+    login: "Login",
+    team: "Our Team",
+    allBooks: "All Books",
+    tur: "There are no books for this type ",
+    chooseCategory:"Choose categories"
 
-      
   },
- 
+
 
 
 
@@ -68,20 +69,21 @@ export const translations = {
       },
 
     ],
-    logo:'Geologiya fanlari universiteti',
-    type:"Elektron kutubxona",
+    logo: 'Geologiya fanlari universiteti',
+    type: "Elektron kutubxona",
     univercity: `Geologiya fanlari universiteti  axborot-resurs markazining veb-sahifasi`,
- button1: "Kitoblar",
+    button1: "Kitoblar",
     button2: "Elektron Katalog",
-        linksName:"Foydali havolalar",
-        booksName:"Eng qiziqarli 5 ta kitoblar",
-        readMore:"O'qish",
-        news:"Yangiliklar",
-        login:"Kirish",
-        team:"Xodimlar",
-        allBooks:"Kitoblar  "
+    linksName: "Foydali havolalar",
+    booksName: "Eng qiziqarli 5 ta kitoblar",
+    readMore: "O'qish",
+    news: "Yangiliklar",
+    login: "Kirish",
+    team: "Xodimlar",
+    allBooks: "Kitoblar  ",
+    tur: "Bu tur boyicha kitoblar mavjud emas  ",
+chooseCategory:"Kategoriya tanlang"
 
-     
-    
+
   }
 };

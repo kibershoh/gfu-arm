@@ -62,7 +62,7 @@ const BookList = () => {
         <div>
             {
                 !loading ?
-                    <div id='bookList' className=' max-xl:grid-cols-2 max-md:grid-cols-1  px-5 max-md:px-1'>
+                    <div id='bookList' className=' max-xl:grid-cols-2 max-md:grid-cols-1   max-md:px-1'>
                         {
                                    <CarouselBooks cards={data}/>
 
