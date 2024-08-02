@@ -16,6 +16,7 @@ import { IMAGES } from '../../Constants/CarouselImage';
 import TestZoom from './imageZoom';
 import AutoComplate from './Tab/autoComlate';
 import { LanguageContext } from '../../context/LanguageContext';
+import { Link, useNavigate } from 'react-router-dom';
 
 export const Images1 = [
   {
@@ -42,13 +43,13 @@ export const Images2 = [
 
 const AboutUs = () => {
       const { t, language, setLanguage } = useContext(LanguageContext);
-
+const navigate = useNavigate()
   return (
     <div className=''>
       <div className='aboutUs'>
 
       </div>
-      <div className='my-10 px-10 max-md:px-3 grid grid-cols-2 gap-10 items-center 2xl:w-11/12 2xl:mx-auto 2xl:p max-md:grid-cols-1'>
+      <div className='my-10 px-20 mb-10 max-md:px-3 grid grid-cols-2 gap-4 items-center 2xl:w-11/12 2xl:mx-auto 2xl:p max-md:grid-cols-1'>
         <div className='flex gap-5 px-4'>
 
           <div className='2xl:w-80  2xl:h-96 w-64 h-80 rounded-xl'>
@@ -64,12 +65,11 @@ const AboutUs = () => {
         <div>
           <h1 className='text-2xl text-center font-be-vietnam'>{t('oquv_zallari')}</h1>
           <p className='font-be-vietnam text-lg  my-10'>
-            Har bir yirik kompaniya faqatgina oʻziga emas, balki yonida yelkadosh boʻlgan hamda ishonganlarga minnatdorchilik bildirishi lozim. Axir, bizning ishda eng muhim prinsip - bu ishonch.
-            Ishonch nafaqat mijoz va hamkorlar sadoqatini ta’minlaydi, qolversa, o’zimizga bo’lgan talabchanligimizni oshiradi. Biz uzoq yillik insoniylik an’analari ustiga qurilgan munosabatlar asosida hamkorlik qilamiz.
+           {t('information2')}
           </p>
           <div className='flex gap-10 max-md:gap-2 max-md:justify-around'>
-            <button className='bg-blue-600 p-2 rounded  text-xl text-white flex items-center gap-5 max-md:gap-2 max-md:p-text-md w-64'>Gfu Arm <GoArrowUpRight className='hover:rotate-45 w-8 h-8 duration-700 bg-blue-700 rounded-full p-1 ' /></button>
-            <button  className='bg-white p-2 rounded  text-xl text-slate-950 border-2 border-slate-500  flex items-center justify-center gap-5 max-md:gap-2 max-md:p-text-md w-64'><a className='flex items-center' href="#ourTeam">Team <MdPeople className='hover:rotate-45 text-white w-6 h-6 duration-700 bg-blue-700 rounded-full p-1 ' /></a></button>
+            <Link to={'https://uzgeouniver.uz/uz'}  className='bg-blue-600 p-2 rounded  text-xl text-white flex items-center gap-5 max-md:gap-2 max-md:p-text-md w-64'>{t('ourUniversity')} <GoArrowUpRight className='hover:rotate-45 w-8 h-8 duration-700 bg-blue-700 rounded-full p-1 ' /></Link>
+            <button  className='bg-white p-2 rounded  text-xl text-slate-950 border-2 border-slate-500  flex items-center justify-center gap-5 max-md:gap-2 max-md:p-text-md w-64'><a className='flex items-center' href="#ourTeam">{t('team')} <MdPeople className='hover:rotate-45 text-white w-6 h-6 duration-700 bg-blue-700 rounded-full p-1 ' /></a></button>
 
           </div>
         </div>

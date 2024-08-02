@@ -88,8 +88,7 @@ const [data, setData] = useState([])
    ]
  
   return (
-    <div id='ourTeam'>
-     
+    <div id='ourTeam'>     
          <div className='mt-10 px-10 2xl:w-3/4 2xl:px-3 2xl:mx-auto max-md:px-2'>
                       <h1 className='text-center my-10 text-3xl font-be-vietnam'>{t('team')}</h1>
                         <div className="grid grid-cols-3 gap-4 lg:gap-5 px-10 max-md:px-2 max-md:grid-cols-1 ">
@@ -98,8 +97,7 @@ const [data, setData] = useState([])
                         data?.map((item)=>(
                            <TeamCard item={item}/>
                         ))
-                       }
-                       
+                       }                    
                       
                         
                       

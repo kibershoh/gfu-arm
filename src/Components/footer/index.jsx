@@ -44,10 +44,10 @@ const Footer = () => {
                    
                      
                    <div className='flex  items-center max-md:justify-between w-full'>
-                     <Link to="https://www.instagram.com/geologiya_fanlari_universiteti/" className="bg-transparent border border-slate-800 hover:bg-slate-200 mr-4 max-md:mr-1  rounded-full  p-2 textblack">
+                     <Link to="https://www.instagram.com/geologiya_fanlari_universitet/" className="bg-transparent border border-slate-800 hover:bg-slate-200 mr-4 max-md:mr-1  rounded-full  p-2 textblack">
                         <BsInstagram size={20} />
                     </Link>
-                    <Link to="https://t.me/Uzgeouniver_bot" className="bg-transparent border border-slate-800 hover:bg-slate-200 mr-4 max-md:mr-1 rounded-full  p-2 text-slate-800">
+                    <Link to="https://t.me/gfu_rasmiy_kanali" className="bg-transparent border border-slate-800 hover:bg-slate-200 mr-4 max-md:mr-1 rounded-full  p-2 text-slate-800">
                         <BsTelegram size={20} />
                     </Link>
                     <Link to="/" className="bg-transparent hover:bg-slate-200 border border-slate-800 mr-4 max-md:mr-1  rounded-full p-2 text-slate-800">
