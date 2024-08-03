@@ -33,7 +33,7 @@ const Home = () => {
         
         {/* <Link to={"https://catalog.uzgeouniver.uz/cgi-bin/irbis64r_plus/cgiirbis_64_ft.exe?C21COM=F&I21DBN=IBIS_FULLTEXT&P21DBN=IBIS&Z21ID=Guest&lng=uz&S21CNR=5'  className='bg-blue-600  px-2 max-md:px-1  py-4 w-100 max-md:p-2 max-md:text-md  text-center  text-xl font-inter tracking-wide max-md:w-36 p-2 mt-3 rounded text-white max-md:mt-4   hover:bg-blue-700 max-md:text-sm' onClick={()=>navigate('https://catalog.uzgeouniver.uz/cgi-bin/irbis64r_plus/cgiirbis_64_ft.exe?C21COM=F&I21DBN=IBIS_FULLTEXT&P21DBN=IBIS&Z21ID=Guest&lng=uz&S21CNR=5"}>
         </Link> */}
-              <Link to={'https://unilibrary.uz/'} className='bg-white text-center px-2 py-4 max-md:p-2 max-md:text-md   text-xl font-inter tracking-wide  max-md:w-auto p-2  mt-3 rounded text-blue-600 border-blue-600 w-100 max-md:px-1  hover:text-white border max-md:mt-4   hover:bg-blue-700 max-md:text-sm' >{t('button2')} </Link>
+              <Link to={'https://catalog.uzgeouniver.uz/'} className='bg-white text-center px-2 py-4 max-md:p-2 max-md:text-md   text-xl font-inter tracking-wide  max-md:w-auto p-2  mt-3 rounded text-blue-600 border-blue-600 w-100 max-md:px-1  hover:text-white border max-md:mt-4   hover:bg-blue-700 max-md:text-sm' >{t('button2')} </Link>
               </div>
                       </div>
         
