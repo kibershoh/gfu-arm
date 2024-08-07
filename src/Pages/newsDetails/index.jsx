@@ -47,8 +47,8 @@ const NewsDetails = () => {
                     <ImageSlider fotos={product.fotos}/>
                   </div>
                   <div className=''>
-                    <p className='text-slate-900 mt-3 font-semibold  w-full'>{product.title}</p>
-                  <p className='pt-3'>{product.info}
+                    <p className='text-slate-900 mt-3  px-36 font-semibold  w-full text-xl'>{product.title}</p>
+                  <p className='pt-3 px-36 text-lg'>{product.info}
 
                   </p>
                   </div>

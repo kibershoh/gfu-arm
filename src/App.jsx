@@ -38,7 +38,11 @@ const App = () => {
       location.pathname.startsWith("/admin")  ? <NavbarAdmin/> 
       :
        <>
+{
+  !location.pathname.startsWith("/newsdetails") ?
       <Navbar/>
+      :''
+}
       </>
      }
       <AllRouters />

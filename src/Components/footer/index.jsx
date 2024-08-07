@@ -17,7 +17,7 @@ const Footer = () => {
     const [active, setActive] = useState("");
     const [toggle, setToggle] = useState(false);
     return (
-        <div className=' max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1  p-10 px-20 border-slate-500 border-t-2 max-xl:border-slate-500 mt-3 max-md:px-3'>
+        <div className=' max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1  p-10 px-36 border-slate-500 border-t-2 max-xl:border-slate-500 mt-3 max-md:px-3'>
 
              <img className='w-16 h-16 mx-auto hidden max-md:flex' src={logo} alt="" />
 

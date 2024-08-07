@@ -82,6 +82,7 @@ const Navbar = () => {
     <div className={clsx(
       // scrollDirection !== "up" || scrollDirection === undefined || scrollY === undefined ? "  transform translate-y-0 visible  transition duration-1000" : ( "transform translate-y-full invisible transition duration-200"),
       "   w-full",
+      // location.pathname !== '/newsdetails/19#newsDetails' && hidden
                      
     )} ref={sidebarRef}>
       {/* Desktop */}
