@@ -25,7 +25,7 @@ const Home = () => {
           {t('univercity')}
                   </h1>
            
-              <div className='grid grid-cols-2  max-md:grid max-md:grid-cols-2 gap-5 mt-10 w-1/2 max-md:w-full max-md:gap-7'>
+              <div className='grid grid-cols-3  max-md:grid max-md:grid-cols-2 gap-5 mt-10 w-1/2 max-md:w-full max-md:gap-7'>
                 <a
                 href={'#top5'}
                   className='bg-blue-600  px-2 max-md:px-1  py-4 w-100 max-md:p-2 max-md:text-md  text-center  text-xl font-inter tracking-wide max-md:w-36 p-2 mt-3 rounded text-white max-md:mt-4   hover:bg-blue-700 max-md:text-sm'
