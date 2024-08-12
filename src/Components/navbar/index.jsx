@@ -24,7 +24,7 @@ const Navbar = () => {
   };
 
 
-   
+
 
 
   const Profile = () => {
@@ -80,18 +80,16 @@ const Navbar = () => {
   };
   return (
     <div className={clsx(
-      // scrollDirection !== "up" || scrollDirection === undefined || scrollY === undefined ? "  transform translate-y-0 visible  transition duration-1000" : ( "transform translate-y-full invisible transition duration-200"),
       "   w-full",
-      // location.pathname !== '/newsdetails/19#newsDetails' && hidden
-                     
     )} ref={sidebarRef}>
+
       {/* Desktop */}
       <div
         className={clsx(
           "flex justify-between items-center bg-transparent text-white   p-1 pt-5 max-w-full w-full  absolute z-30 top-0 left-0 right-0 2xl:px-[10%] 2xl:mx-auto px-10 max-md:px-4 ",
-          
-         
-          
+
+
+
         )}
       >
         <Link to={"/"} className="block max-lg:hidden">
@@ -100,7 +98,6 @@ const Navbar = () => {
             <img className="w-24 h-24" src={logotip} alt="" />
             <h1 className={clsx(
               "text-white tracking-wide uppercase   text-lg font-medium",
-              // location.pathname === '/' ? "" : " text-slate-950  w-96 text-2xl  font-medium"
             )}>{t('logo')} </h1>
           </h1>
         </Link>
@@ -117,7 +114,7 @@ const Navbar = () => {
                 <NavLink
                   to={nav.path}
                   className={
-                   active === nav.title
+                    active === nav.title
                       ? "flex mx-3 font-be-vietnam   2xl:text-lg text-sm tracking-widest	 border-b-2 uppercase hover:text-blue-600 border-blue-800"
                       : "flex mx-3 font-be-vietnam items-center 2xl:text-lg text-sm tracking-widest	 uppercase hover:text-blue-600"
                   }
@@ -133,20 +130,20 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-           
+
 
         <div className="flex items-center">
           <div className="mr-3 ">
             <Link to={'/login'} className="text-lg  bg-blue-600 hover:bg-blue-600 p-1 px-2 rounded text-white uppercase">{t('login')}</Link>
           </div>
           <div>
-           <select className="outline-none dark:text-white p-1 text-white font-semibold text-lg border-2 border-blue-600	 rounded-lg  bg-transparent	" value={language} onChange={handleLanguageChange}>
+            <select className="outline-none dark:text-white p-1 text-white font-semibold text-lg border-2 border-blue-600	 rounded-lg  bg-transparent	" value={language} onChange={handleLanguageChange}>
               <option value="en" className="text-md text-slate-950  bg-transparent  font-semibold mb-10 outline-none" style={{ height: '30px' }}>ENG</option>
               <option value="uz" className="text-md text-slate-950  bg-transparent  font-semibold mb-10 outline-none">UZB</option>
             </select>
           </div>
 
-         
+
 
           <div
             className={
@@ -157,7 +154,7 @@ const Navbar = () => {
           >
             <div className="w-full relative">
               <IoCaretUpSharp size={25} className="absolute -top-8 right-0" />
-              
+
 
             </div>
           </div>
@@ -172,7 +169,7 @@ const Navbar = () => {
         )}
       >
         <div className="flex justify-between items-center pr-4 pl-2 pt-5">
-          
+
           <CgClose
             size={23}
             className="ml-auto hidden max-lg:block"
@@ -218,4 +215,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
- 
