@@ -1,19 +1,13 @@
 import React, { useContext } from 'react'
-import { TabsCustomAnimation } from './Tab'
-import Carousel3d from '../../UI/CarouseThree'
 import AboutLibrary from './aboutLibrary'
 import one from '../../assets/education/9.jpg';
 import two from '../../assets/education/8.jpg';
-import three from '../../assets/education/4.jpg';
 import prezident from '../../assets/education/5.jpg';
 import prezident2 from '../../assets/education/6.jpg';
 import { GoArrowUpRight } from "react-icons/go";
 import { MdPeople } from "react-icons/md";
 
 import './styles.scss'
-import ImageSlider from './imageSlider';
-import { IMAGES } from '../../Constants/CarouselImage';
-import TestZoom from './imageZoom';
 import AutoComplate from './Tab/autoComlate';
 import { LanguageContext } from '../../context/LanguageContext';
 import { Link, useNavigate } from 'react-router-dom';
