@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { booksData } from '../Constants/booksData'
-import BookCard from './book'
 import { useNavigate } from 'react-router-dom';
 import LoaderComponent from './LoaderComponent';
-import Carousel from '../Pages/news/NewsCarousel';
 import CarouselBooks from './CarouselBook';
 
 const BookList = () => {
