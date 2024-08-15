@@ -24,7 +24,7 @@ const Footer = () => {
 
             <img className='w-16 h-16 mx-auto hidden max-md:flex' src={logo} alt="" />
 
-            <div className='flex justify-between'>
+            <div className='flex justify-between max-md:justify-center max-md:flex-col'>
                 <div className='flex flex-col'>
                 
 

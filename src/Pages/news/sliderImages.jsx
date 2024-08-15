@@ -18,7 +18,7 @@ const ImageSlider = ({fotos}) => {
   };
 
   return (
-    <main className="w-96 max-md:w-80 h-full">
+    <main className="w-[40%] max-md:w-80 h-full">
       <div className="relative  overflow-hidden rounded-md">
         <div className="absolute right-1 top-1 z-10 rounded-full bg-white px-2 text-center text-sm text-black">
           <span>{currentIndex}</span>/<span>{fotos?.length}</span>
@@ -38,13 +38,13 @@ const ImageSlider = ({fotos}) => {
           <i className="fas fa-chevron-right text-lg font-bold text-gray-500"></i>
         </button>
 
-        <div className="relative w-96 max-md:w-80 h-64">
+        <div className="relative mx-auto max-md:w-80 h-96">
           {fotos?.map((image, index) => (
             <div
               key={index}
-              className={`top-0 absolute transition-opacity duration-300 ${currentIndex === index + 1 ? 'opacity-100' : 'opacity-0'}`}
+              className={`top-0 flex justify-center z-10 absolute transition-opacity duration-300 ${currentIndex === index + 1 ? 'opacity-100' : 'opacity-0'}`}
             >
-              <img src={`https://librarygfu.pythonanywhere.com/${image.fotos}`} alt={`Slide ${index + 1}`} className="rounded-sm  w-96 max-md:w-80 h-80" />
+              <img src={`https://librarygfu.pythonanywhere.com/${image.fotos}`} alt={`Slide ${index + 1}`} className="rounded-sm  w-[800px] ml-24 max-md:w-80 h-[500px]" />
             </div>
           ))}
         </div>

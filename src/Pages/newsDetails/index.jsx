@@ -46,9 +46,9 @@ const NewsDetails = () => {
                    <div className="w-full flex items-center justify-center ">
                     <ImageSlider fotos={product.fotos}/>
                   </div>
-                  <div className=''>
-                    <p className='text-slate-900 mt-3  px-36 font-semibold  w-full text-xl'>{product.title}</p>
-                  <p className='pt-3 px-36 text-lg'>{product.info}
+                  <div className='w-3/4 mx-auto mt-10'>
+                    <p className='text-slate-900 mt-3  font-semibold  w-full text-xl'>{product.title}</p>
+                  <p className='pt-3 text-xl'>{product.info}
 
                   </p>
                   </div>
@@ -57,7 +57,7 @@ const NewsDetails = () => {
                        Back 
                     </button>
                   </div>
-                        <span className='text-slate-400 absolute bottom-3'>{product.created}</span>
+                        <span className='text-slate-400 absolute bottom-3 right-36'>{product.created}</span>
                 </div>
               
 
