@@ -3,12 +3,15 @@ import { Link, NavLink } from 'react-router-dom'
 import { BsInstagram, BsTelegram, BsTwitter } from 'react-icons/bs'
 import { IoLogoYoutube } from "react-icons/io5";
 import { GrFacebookOption } from "react-icons/gr";
-import { FaPhone } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
 import { MdAlternateEmail, MdCopyright, MdLocationPin } from 'react-icons/md';
 
 import 'react-international-phone/style.css';
 import logo from '../../assets/logotip.png';
 import { LanguageContext } from '../../context/LanguageContext';
+import MapLink from './MapLink';
+import YandexMap from './yandexMap';
+import { Map, YMaps } from '@pbe/react-yandex-maps';
 
 
 const Footer = () => {
@@ -21,7 +24,9 @@ const Footer = () => {
 
             <img className='w-16 h-16 mx-auto hidden max-md:flex' src={logo} alt="" />
 
-            <div className='flex flex-col'>
+            <div className='flex justify-between'>
+                <div className='flex flex-col'>
+                
 
                 <ul className='flex flex-wrap wrap max-md:justify-around text-start'>
                     {t('navLinks').map((nav) => (
@@ -72,6 +77,19 @@ const Footer = () => {
                 </div>
 
             </div>
+            <div>
+    <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11981.905928438486!2d69.341948!3d41.341996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef466b1d2a92d%3A0x1fa3714a97987c89!2z0JjQvdGB0YLQuNGC0YPRgiDQs9C10L7Qu9C-0LPQuNC4INC4INCz0LXQvtGE0LjQt9C40LrQuCDQuNC8LiDQpS7QnC7QkNCx0LTRg9C70LvQsNC10LLQsCDQkNC60LDQtNC10LzQuNGPINCd0LDRg9C6INCg0KPQtw!5e0!3m2!1sru!2s!4v1723698012396!5m2!1sru!2s" 
+  width="320" 
+  height="270" 
+  className='border border-2-blue-600' 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+</div>
+            </div>
             <br />
             <br />
             <hr />
@@ -92,9 +110,7 @@ const Footer = () => {
                     <MdCopyright /> GFU | ARM 2024</h1>
             </div>
 
-
-
-
+           
 
         </div>
     )
