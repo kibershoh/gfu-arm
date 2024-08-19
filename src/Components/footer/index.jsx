@@ -20,7 +20,7 @@ const Footer = () => {
     const [active, setActive] = useState("");
     const [toggle, setToggle] = useState(false);
     return (
-        <div className='max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1  p-10 2xl:px-36 border-slate-500 border-t-2 max-xl:border-slate-500 mt-3 max-md:px-3'>
+        <div className='max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1  p-5 2xl:px-36 border-slate-500 border-t-2 max-xl:border-slate-500 mt-3 max-md:px-3'>
 
             <img className='w-16 h-16 mx-auto hidden max-md:flex' src={logo} alt="" />
 
@@ -80,8 +80,8 @@ const Footer = () => {
             <div>
     <iframe 
   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11981.905928438486!2d69.341948!3d41.341996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef466b1d2a92d%3A0x1fa3714a97987c89!2z0JjQvdGB0YLQuNGC0YPRgiDQs9C10L7Qu9C-0LPQuNC4INC4INCz0LXQvtGE0LjQt9C40LrQuCDQuNC8LiDQpS7QnC7QkNCx0LTRg9C70LvQsNC10LLQsCDQkNC60LDQtNC10LzQuNGPINCd0LDRg9C6INCg0KPQtw!5e0!3m2!1sru!2s!4v1723698012396!5m2!1sru!2s" 
-  width="320" 
-  height="270" 
+  width="300" 
+  height="200" 
   className='border border-2-blue-600' 
   allowfullscreen="" 
   loading="lazy" 
