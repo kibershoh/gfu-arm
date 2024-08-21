@@ -16,3 +16,46 @@
       transform: translateY(-100%);
 
   }
+  #scroll_container {
+ 
+  overflow: hidden;
+}
+
+#scroll_text {
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my_animation 20s linear infinite;
+  -webkit-animation: my_animation 20s linear infinite;
+  animation: my_animation 20s linear infinite;
+  font-family: "Londrina Shadow", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* for Firefox */
+@-moz-keyframes my_animation {
+  from { -moz-transform: translateX(-100%); }
+  to { -moz-transform: translateX(50%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my_animation {
+  from { -webkit-transform: translateX(-100%); }
+  to { -webkit-transform: translateX(100%); }
+}
+
+@keyframes my_animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}

@@ -79,6 +79,18 @@ const Navbar = () => {
     setLanguage(e.target.value);
   };
   return (
+   <>
+      <div id="scroll_container">
+          <div id="scroll_text" className='text-black dark:text-white flex justify-between'>
+            <h1 className='text-xl  text-red-600  max-lg:text-xs max-md:text-lg w-full tracking-wide	font-mono backdrop-blur-sm p-1'>Sayt test rejimida ishlamoqda!</h1>
+            <h1 className='text-xl max-md:hidden text-red-600  max-lg:text-xs w-full tracking-wide	font-mono backdrop-blur-sm p-1'>Sayt test rejimida ishlamoqda!</h1>
+            <h1 className='text-xl max-md:hidden text-red-600  max-lg:text-xs w-full tracking-wide	font-mono backdrop-blur-sm p-1'>Sayt test rejimida ishlamoqda!</h1>
+          </div>
+        </div>
+
+
+
+
     <div className={clsx(
       "   w-full",
     )} ref={sidebarRef}>
@@ -86,7 +98,7 @@ const Navbar = () => {
       {/* Desktop */}
       <div
         className={clsx(
-          "flex justify-between items-center bg-transparent text-white   p-1 pt-5 max-w-full w-full  absolute z-30 top-0 left-0 right-0 2xl:px-[10%] 2xl:mx-auto px-10 max-md:px-4 ",
+          "flex justify-between  items-center bg-transparent text-white   p-1 pt-8 max-w-full w-full  absolute z-30 top-0 left-0 right-0 2xl:px-[10%] 2xl:mx-auto px-10 max-md:px-4 ",
 
 
 
@@ -211,6 +223,7 @@ const Navbar = () => {
         </div>
       </nav>
     </div>
+   </>
   );
 };
 

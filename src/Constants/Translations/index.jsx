@@ -37,6 +37,8 @@ export const translations = {
     booksName: "The  most interesting books",
     readMore: "Read More",
     news: "News",
+    test:"The site is in test mode!",
+
     login: "Login",
     team: "Our Team",
     allBooks: "All Books",
@@ -89,6 +91,7 @@ export const translations = {
     linksName: "Foydali havolalar",
     booksName: "Eng qiziqarli  kitoblar",
     readMore: "O'qish",
+    test:"Sayt test rejimida ishlamoqda!",
     news: "Yangiliklar",
     login: "Kirish",
     team: "Xodimlar",
