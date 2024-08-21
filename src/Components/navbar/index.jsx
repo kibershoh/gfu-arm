@@ -82,9 +82,9 @@ const Navbar = () => {
    <>
       <div id="scroll_container">
           <div id="scroll_text" className='text-black dark:text-white flex justify-between'>
-            <h1 className='text-xl  text-red-600  max-lg:text-xs max-md:text-lg w-full tracking-wide	font-mono backdrop-blur-sm p-1'>Sayt test rejimida ishlamoqda!</h1>
-            <h1 className='text-xl max-md:hidden text-red-600  max-lg:text-xs w-full tracking-wide	font-mono backdrop-blur-sm p-1'>Sayt test rejimida ishlamoqda!</h1>
-            <h1 className='text-xl max-md:hidden text-red-600  max-lg:text-xs w-full tracking-wide	font-mono backdrop-blur-sm p-1'>Sayt test rejimida ishlamoqda!</h1>
+            <h1 className='text-lg  text-red-600  max-lg:text-xs max-md:text-lg w-full tracking-wide	font-mono backdrop-blur-sm '>{t('test')}</h1>
+            <h1 className='text-lg max-md:hidden text-red-600  max-lg:text-xs w-full tracking-wide	font-mono backdrop-blur-sm '>{t('test')}</h1>
+            <h1 className='text-lg max-md:hidden text-red-600  max-lg:text-xs w-full tracking-wide	font-mono backdrop-blur-sm '>{t('test')}</h1>
           </div>
         </div>
 
